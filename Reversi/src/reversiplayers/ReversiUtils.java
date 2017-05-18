@@ -7,10 +7,12 @@ import javax.naming.TimeLimitExceededException;
 
 import reversi.Coordinates;
 import reversi.GameBoard;
+import reversi.Utils;
 
 public class ReversiUtils {
 	
-
+	private final long timeOut;
+	private long startTime;
 	public static class GameStateNode {
 
 		public GameBoard gameBoard;
@@ -25,8 +27,19 @@ public class ReversiUtils {
 			}
 			return super.equals(obj);
 		}
+		@Override
+		public String toString() {
+			return "Board: " + gameBoard + " points: " + points + " coord " + coordinate;
+		}
 	}
 
+	public ReversiUtils(long timeout) {
+		System.out.println("Created Utils with timeout: " + timeout);
+		this.timeOut = timeout == 0 ? Integer.MAX_VALUE : timeout;
+	
+	}
+	
+	
 	public List<GameStateNode> getAllPossMoves(GameBoard gb, IMemoryManager<GameStateNode> mManager,
 			int player) {
 
@@ -36,7 +49,7 @@ public class ReversiUtils {
 			for (int j = 1; j <= 8; j++) {
 				Coordinates c = new Coordinates(i, j);
 				if (gb.checkMove(player, c)) {
-					GameStateNode node = mManager.getNewObj();
+					GameStateNode node = new GameStateNode();
 					node.coordinate = c;
 					node.gameBoard = gb;
 					moves.add(node);
@@ -46,8 +59,28 @@ public class ReversiUtils {
 		return moves;
 	}
 
-	public GameStateNode getBestMove() {
-		return null;
+	public GameStateNode getBestMove(GameBoard gb, int player) {
+		startTime = System.currentTimeMillis();
+		System.out.println("Getting best Move + GB: " + gb);
+		GameStateNode bestNode = new GameStateNode();
+		bestNode.points = Integer.MIN_VALUE;
+		
+		try {
+		for (GameStateNode node : getAllPossMoves(gb, null, player)) {
+			System.out.println("Node before " + node );
+			
+			minMove(node, 10, gb.clone(), Integer.MIN_VALUE, Integer.MAX_VALUE, player, Utils.other(player));
+			
+			System.out.println("Node after " + node);
+			
+				if (bestNode.points < node.points)
+				bestNode = node;
+		}
+		} catch (TimeLimitExceededException e) {
+			System.out.println("Got time limit e");
+		}
+		System.out.println("Returning: " + bestNode.coordinate + "GB " + bestNode.gameBoard);
+		return bestNode;
 	}
 
 	private int getHeuristicPoints(GameBoard gb, int player) {
@@ -66,6 +99,10 @@ public class ReversiUtils {
 
 		int max = alpha;
 		for (GameStateNode node : getAllPossMoves(gb, new MemoryManager(), maxPlayer)) {
+			
+			if (timeOut <= System.currentTimeMillis() - startTime) 
+				throw new TimeLimitExceededException();
+			
 			int value = minMove(node, depth - 1, gb.clone(), max, beta, maxPlayer, minPlayer);
 			node.points = value;
 			if (value > max) {
@@ -90,6 +127,10 @@ public class ReversiUtils {
 
 		int min = beta;
 		for (GameStateNode node : getAllPossMoves(gb, new MemoryManager(), minPlayer)) {
+
+			if (timeOut <= System.currentTimeMillis() - startTime) 
+				throw new TimeLimitExceededException();
+			
 			int value = maxMove(node, depth - 1, gb.clone(), alpha, min, maxPlayer, minPlayer);
 			node.points = value;
 			if (value < min) {

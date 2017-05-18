@@ -18,6 +18,7 @@ public class ReversiPlayerMinMax implements ReversiPlayer {
 	private long timelimit;
 	private long startTime;
 	private int otherPlayer = Utils.other(color);
+	private ReversiUtils utils;
 
 	public ReversiPlayerMinMax() {
 		System.out.println("Reversi Player erstellt.");
@@ -104,7 +105,8 @@ public class ReversiPlayerMinMax implements ReversiPlayer {
 		this.color = color;
 		this.otherPlayer = Utils.other(color);
 		timelimit = timeout;
-
+		utils = new ReversiUtils(timeout);
+		
 		if (color == GameBoard.RED) {
 			System.out.println("RandomPlayer ist Spieler RED.");
 		} else if (color == GameBoard.GREEN) {
@@ -120,12 +122,8 @@ public class ReversiPlayerMinMax implements ReversiPlayer {
 	 */
 	public Coordinates nextMove(GameBoard gb) {
 		System.out.println("Next Move:");
-		GameBoard gb2 = gb.clone();
-		GameBoard gb3 = gb.clone();
-		System.out.println("2: " + gb2 + "3:" + gb3);
-		System.out.println(gb2.toString().equals(gb3.toString()));
-		System.out.println(gb2.hashCode() + " 3:  " + gb3.hashCode());
-		return calcNextMove(gb);
+			
+		return utils.getBestMove(gb, color).coordinate;
 	}
 
 	private ArrayList<Coordinates> getAllPossMoves(GameBoard gb, int player) {
