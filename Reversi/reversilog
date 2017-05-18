@@ -710,3 +710,23 @@ id=TestGame time=1495110437959 Redmove=8,6
 id=TestGame time=1495110440303 Greenmove=null
 id=TestGame time=1495110440324 finished reds=18 greens=46
 id=TestGame time=1495110495349 quit button pressed
+id=TestGame time=1495110948253 new game
+id=TestGame time=1495110948258 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1495110948374 initialized
+id=TestGame time=1495110948426 Redmove=6,4
+id=TestGame time=1495110950784 Green failed: NullPointerException: null
+id=TestGame time=1495111093073 new game
+id=TestGame time=1495111093080 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1495111093216 initialized
+id=TestGame time=1495111093286 Redmove=6,4
+id=TestGame time=1495111095644 Green failed: NullPointerException: null
+id=TestGame time=1495111333605 quit button pressed
+id=TestGame time=1495111335846 quit button pressed
+id=TestGame time=1495111337424 quit button pressed
+id=TestGame time=1495111339061 quit button pressed
+id=TestGame time=1495111340605 quit button pressed
+id=TestGame time=1495111341897 quit button pressed
+id=TestGame time=1495111343243 quit button pressed
+id=TestGame time=1495111344593 quit button pressed
+id=TestGame time=1495111345795 quit button pressed
+id=TestGame time=1495111347053 quit button pressed
