@@ -23,7 +23,7 @@ public class ReversiPlayerMinMax implements ReversiPlayer {
 	public ReversiPlayerMinMax() {
 		System.out.println("Reversi Player erstellt.");
 	}
-
+/*
 	private int heuristicPoints(GameBoard gb) {
 		return gb.countStones(color) - gb.countStones(otherPlayer);
 	}
@@ -94,7 +94,7 @@ public class ReversiPlayerMinMax implements ReversiPlayer {
 		}
 		return alpha;
 	}
-
+*/
 	/**
 	 * Speichert die Farbe und den Timeout-Wert in Instanzvariablen ab. Diese
 	 * Methode wird vor Beginn des Spiels von {@link Arena} aufgerufen.

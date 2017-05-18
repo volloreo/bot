@@ -710,3 +710,100 @@ id=TestGame time=1495110437959 Redmove=8,6
 id=TestGame time=1495110440303 Greenmove=null
 id=TestGame time=1495110440324 finished reds=18 greens=46
 id=TestGame time=1495110495349 quit button pressed
+id=TestGame time=1495110948253 new game
+id=TestGame time=1495110948258 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1495110948374 initialized
+id=TestGame time=1495110948426 Redmove=6,4
+id=TestGame time=1495110950784 Green failed: NullPointerException: null
+id=TestGame time=1495111093073 new game
+id=TestGame time=1495111093080 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1495111093216 initialized
+id=TestGame time=1495111093286 Redmove=6,4
+id=TestGame time=1495111095644 Green failed: NullPointerException: null
+id=TestGame time=1495111333605 quit button pressed
+id=TestGame time=1495111335846 quit button pressed
+id=TestGame time=1495111337424 quit button pressed
+id=TestGame time=1495111339061 quit button pressed
+id=TestGame time=1495111340605 quit button pressed
+id=TestGame time=1495111341897 quit button pressed
+id=TestGame time=1495111343243 quit button pressed
+id=TestGame time=1495111344593 quit button pressed
+id=TestGame time=1495111345795 quit button pressed
+id=TestGame time=1495111347053 quit button pressed
+id=TestGame time=1495112015893 new game
+id=TestGame time=1495112015898 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1495112016016 initialized
+id=TestGame time=1495112016071 Redmove=6,3
+id=TestGame time=1495112018422 Green failed: Error: Unresolved compilation problems: 
+	Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+	Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+	s cannot be resolved
+
+id=TestGame time=1495112027056 new game
+id=TestGame time=1495112027061 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1495112027182 initialized
+id=TestGame time=1495112027235 Redmove=6,5
+id=TestGame time=1495112029872 Greenmove=3,4
+id=TestGame time=1495112032222 Redmove=6,3
+id=TestGame time=1495112034731 Greenmove=4,6
+id=TestGame time=1495112037073 Redmove=3,7
+id=TestGame time=1495112039790 Greenmove=4,7
+id=TestGame time=1495112042134 Redmove=3,5
+id=TestGame time=1495112047431 Greenmove=2,4
+id=TestGame time=1495112049771 Redmove=5,7
+id=TestGame time=1495112052577 Greenmove=2,8
+id=TestGame time=1495112054930 Redmove=1,4
+id=TestGame time=1495112058332 Greenmove=1,3
+id=TestGame time=1495112060708 Redmove=1,2
+id=TestGame time=1495112063800 Greenmove=3,3
+id=TestGame time=1495112066151 Redmove=2,6
+id=TestGame time=1495112071353 Greenmove=1,5
+id=TestGame time=1495112073695 Redmove=2,2
+id=TestGame time=1495112078623 Greenmove=1,1
+id=TestGame time=1495112080962 Redmove=1,7
+id=TestGame time=1495112088319 Greenmove=3,1
+id=TestGame time=1495112090680 Redmove=4,8
+id=TestGame time=1495112093946 Greenmove=3,2
+id=TestGame time=1495112096284 Redmove=2,3
+id=TestGame time=1495112101085 Greenmove=3,6
+id=TestGame time=1495112103453 Redmove=2,5
+id=TestGame time=1495112110729 Greenmove=1,6
+id=TestGame time=1495112113070 Redmove=2,1
+id=TestGame time=1495112120419 Greenmove=1,8
+id=TestGame time=1495112122796 Redmove=4,3
+id=TestGame time=1495112129122 Greenmove=3,8
+id=TestGame time=1495112131453 Redmove=2,7
+id=TestGame time=1495112138800 Greenmove=4,1
+id=TestGame time=1495112141139 Redmove=5,6
+id=TestGame time=1495112143625 Greenmove=4,2
+id=TestGame time=1495112145964 Redmove=5,2
+id=TestGame time=1495112148535 Greenmove=5,1
+id=TestGame time=1495112150869 Redmove=6,1
+id=TestGame time=1495112153407 Greenmove=5,3
+id=TestGame time=1495112155746 Redmove=6,4
+id=TestGame time=1495112158106 Greenmove=5,8
+id=TestGame time=1495112160450 Redmove=null
+id=TestGame time=1495112160482 Greenmove=6,2
+id=TestGame time=1495112162830 Redmove=7,3
+id=TestGame time=1495112165183 Greenmove=6,6
+id=TestGame time=1495112167528 Redmove=6,7
+id=TestGame time=1495112169892 Greenmove=6,8
+id=TestGame time=1495112172244 Redmove=null
+id=TestGame time=1495112172278 Greenmove=7,1
+id=TestGame time=1495112174627 Redmove=null
+id=TestGame time=1495112174656 Greenmove=7,2
+id=TestGame time=1495112177004 Redmove=8,1
+id=TestGame time=1495112179354 Greenmove=7,4
+id=TestGame time=1495112181706 Redmove=8,2
+id=TestGame time=1495112184064 Greenmove=7,5
+id=TestGame time=1495112186413 Redmove=8,5
+id=TestGame time=1495112188768 Greenmove=7,6
+id=TestGame time=1495112191120 Redmove=7,8
+id=TestGame time=1495112193473 Greenmove=7,7
+id=TestGame time=1495112195822 Redmove=8,3
+id=TestGame time=1495112198171 Greenmove=8,4
+id=TestGame time=1495112200522 Redmove=8,8
+id=TestGame time=1495112202895 Greenmove=8,6
+id=TestGame time=1495112205245 Redmove=8,7
+id=TestGame time=1495112207597 Greenmove=null
+id=TestGame time=1495112207615 finished reds=23 greens=41

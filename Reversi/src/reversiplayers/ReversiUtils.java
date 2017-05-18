@@ -10,9 +10,12 @@ import reversi.GameBoard;
 import reversi.Utils;
 
 public class ReversiUtils {
-	
+
 	private final long timeOut;
 	private long startTime;
+	private IMemMan<GameStateNode> mManager;
+	private int depth = 7;
+
 	public static class GameStateNode {
 
 		public GameBoard gameBoard;
@@ -27,6 +30,7 @@ public class ReversiUtils {
 			}
 			return super.equals(obj);
 		}
+
 		@Override
 		public String toString() {
 			return "Board: " + gameBoard + " points: " + points + " coord " + coordinate;
@@ -36,12 +40,12 @@ public class ReversiUtils {
 	public ReversiUtils(long timeout) {
 		System.out.println("Created Utils with timeout: " + timeout);
 		this.timeOut = timeout == 0 ? Integer.MAX_VALUE : timeout;
-	
+
+		mManager = MemFactory.createVirtMem();
+
 	}
-	
-	
-	public List<GameStateNode> getAllPossMoves(GameBoard gb, IMemoryManager<GameStateNode> mManager,
-			int player) {
+
+	public List<GameStateNode> getAllPossMoves(GameBoard gb, int player) {
 
 		ArrayList<GameStateNode> moves = new ArrayList<>();
 
@@ -49,9 +53,18 @@ public class ReversiUtils {
 			for (int j = 1; j <= 8; j++) {
 				Coordinates c = new Coordinates(i, j);
 				if (gb.checkMove(player, c)) {
-					GameStateNode node = new GameStateNode();
+					int nodeIndex = mManager.newNode();
+					GameStateNode node;
+					if (mManager.get(nodeIndex) == null) {
+						node = new GameStateNode();
+						mManager.set(nodeIndex, node);
+					} else {
+						node = mManager.get(nodeIndex);
+					}
+
 					node.coordinate = c;
 					node.gameBoard = gb;
+					node.points = 0;
 					moves.add(node);
 				}
 			}
@@ -64,22 +77,23 @@ public class ReversiUtils {
 		System.out.println("Getting best Move + GB: " + gb);
 		GameStateNode bestNode = new GameStateNode();
 		bestNode.points = Integer.MIN_VALUE;
-		
+
 		try {
-		for (GameStateNode node : getAllPossMoves(gb, null, player)) {
-			System.out.println("Node before " + node );
-			
-			minMove(node, 10, gb.clone(), Integer.MIN_VALUE, Integer.MAX_VALUE, player, Utils.other(player));
-			
-			System.out.println("Node after " + node);
-			
+			for (GameStateNode node : getAllPossMoves(gb, player)) {
+				System.out.println("Node before " + node);
+
+				minMove(node, depth, gb.clone(), Integer.MIN_VALUE, Integer.MAX_VALUE, player, Utils.other(player));
+
+				System.out.println("Node after " + node);
+
 				if (bestNode.points < node.points)
-				bestNode = node;
-		}
+					bestNode = node;
+			}
+			System.out.println("No time limit happened!");
 		} catch (TimeLimitExceededException e) {
 			System.out.println("Got time limit e");
 		}
-		System.out.println("Returning: " + bestNode.coordinate + "GB " + bestNode.gameBoard);
+
 		return bestNode;
 	}
 
@@ -98,11 +112,11 @@ public class ReversiUtils {
 		}
 
 		int max = alpha;
-		for (GameStateNode node : getAllPossMoves(gb, new MemoryManager(), maxPlayer)) {
-			
-			if (timeOut <= System.currentTimeMillis() - startTime) 
+		for (GameStateNode node : getAllPossMoves(gb, maxPlayer)) {
+
+			if (timeOut <= System.currentTimeMillis() - startTime)
 				throw new TimeLimitExceededException();
-			
+
 			int value = minMove(node, depth - 1, gb.clone(), max, beta, maxPlayer, minPlayer);
 			node.points = value;
 			if (value > max) {
@@ -126,11 +140,11 @@ public class ReversiUtils {
 		}
 
 		int min = beta;
-		for (GameStateNode node : getAllPossMoves(gb, new MemoryManager(), minPlayer)) {
+		for (GameStateNode node : getAllPossMoves(gb, minPlayer)) {
 
-			if (timeOut <= System.currentTimeMillis() - startTime) 
+			if (timeOut <= System.currentTimeMillis() - startTime)
 				throw new TimeLimitExceededException();
-			
+
 			int value = maxMove(node, depth - 1, gb.clone(), alpha, min, maxPlayer, minPlayer);
 			node.points = value;
 			if (value < min) {
