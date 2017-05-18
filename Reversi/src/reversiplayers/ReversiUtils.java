@@ -53,7 +53,15 @@ public class ReversiUtils {
 			for (int j = 1; j <= 8; j++) {
 				Coordinates c = new Coordinates(i, j);
 				if (gb.checkMove(player, c)) {
-					GameStateNode node = mManager.get(mManager.newNode());
+					int nodeIndex = mManager.newNode();
+					GameStateNode node;
+					if (mManager.get(nodeIndex) == null) {
+						node = new GameStateNode();
+						mManager.set(nodeIndex, node);
+					} else {
+						node = mManager.get(nodeIndex);
+					}
+					
 					node.coordinate = c;
 					node.gameBoard = gb;
 					node.points = 0;
