@@ -1,0 +1,517 @@
+id=TestGame time=1493811191256 new game
+id=TestGame time=1493811191264 red=reversiplayers.RandomPlayer green=reversiplayers.RandomPlayer
+id=TestGame time=1493811191452 initialized
+id=TestGame time=1493811191514 Redmove=6,5
+id=TestGame time=1493811193846 Greenmove=5,6
+id=TestGame time=1493811196181 Redmove=6,4
+id=TestGame time=1493811197319 quit button pressed
+id=TestGame time=1493811976202 new game
+id=TestGame time=1493811976205 red=reversiplayers.RandomPlayer green=reversiplayers.RandomPlayer
+id=TestGame time=1493811976311 initialized
+id=TestGame time=1493811976357 Redmove=6,5
+id=TestGame time=1493811978706 Greenmove=5,6
+id=TestGame time=1493811980644 quit button pressed
+id=TestGame time=1493812014179 new game
+id=TestGame time=1493812014183 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1493812014304 initialized
+id=TestGame time=1493812014347 Redmove=6,5
+id=TestGame time=1493812016718 Green failed: NoSuchElementException: No value present
+id=TestGame time=1493812073838 new game
+id=TestGame time=1493812073842 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1493812073943 initialized
+id=TestGame time=1493812073987 Redmove=6,4
+id=TestGame time=1493812076382 Green failed: NoSuchElementException: No value present
+id=TestGame time=1493812078650 quit button pressed
+id=TestGame time=1493812181942 new game
+id=TestGame time=1493812181947 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1493812182050 initialized
+id=TestGame time=1493812182095 Redmove=6,4
+id=TestGame time=1493812184506 Green failed: NoSuchElementException: No value present
+id=TestGame time=1493812264476 new game
+id=TestGame time=1493812264480 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1493812264585 initialized
+id=TestGame time=1493812264632 Redmove=6,3
+id=TestGame time=1493812266995 Greenmove=3,3
+id=TestGame time=1493812269365 Redmove=4,3
+id=TestGame time=1493812271705 Greenmove=3,5
+id=TestGame time=1493812272575 quit button pressed
+id=TestGame time=1493812472439 new game
+id=TestGame time=1493812472443 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1493812472547 initialized
+id=TestGame time=1493812472599 Redmove=6,6
+id=TestGame time=1493812475018 Green failed: NoSuchElementException: No value present
+id=TestGame time=1493812477809 quit button pressed
+id=TestGame time=1493812499762 new game
+id=TestGame time=1493812499766 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1493812499870 initialized
+id=TestGame time=1493812499917 Redmove=6,6
+id=TestGame time=1493812502355 Greenmove=5,6
+id=TestGame time=1493812504699 Redmove=6,3
+id=TestGame time=1493812507192 Greenmove=3,1
+id=TestGame time=1493812507197 Green makes illegal move
+id=TestGame time=1493812520468 quit button pressed
+id=TestGame time=1493812572853 new game
+id=TestGame time=1493812572858 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1493812572961 initialized
+id=TestGame time=1493812573011 Redmove=6,4
+id=TestGame time=1493812575408 Greenmove=null
+id=TestGame time=1493812575413 Green makes illegal move
+id=TestGame time=1493812586386 quit button pressed
+id=TestGame time=1493812609626 new game
+id=TestGame time=1493812609631 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1493812609776 initialized
+id=TestGame time=1493812609821 Redmove=6,4
+id=TestGame time=1493812612196 Greenmove=null
+id=TestGame time=1493812612207 Green makes illegal move
+id=TestGame time=1493812614836 quit button pressed
+id=TestGame time=1493812696260 new game
+id=TestGame time=1493812696263 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1493812696388 initialized
+id=TestGame time=1493812696434 Redmove=6,6
+id=TestGame time=1493812698791 Greenmove=null
+id=TestGame time=1493812698798 Green makes illegal move
+id=TestGame time=1493812705738 quit button pressed
+id=TestGame time=1493812750401 new game
+id=TestGame time=1493812750406 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1493812750547 initialized
+id=TestGame time=1493812750589 Redmove=6,6
+id=TestGame time=1493812752959 Greenmove=null
+id=TestGame time=1493812752968 Green makes illegal move
+id=TestGame time=1493812767249 quit button pressed
+id=TestGame time=1493812831537 new game
+id=TestGame time=1493812831542 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1493812831670 initialized
+id=TestGame time=1493812831753 Redmove=6,5
+id=TestGame time=1493812834110 Greenmove=null
+id=TestGame time=1493812834116 Green makes illegal move
+id=TestGame time=1493812837366 quit button pressed
+id=TestGame time=1493812851362 new game
+id=TestGame time=1493812851366 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1493812851468 initialized
+id=TestGame time=1493812851518 Redmove=6,5
+id=TestGame time=1493812853960 Greenmove=3,4
+id=TestGame time=1493812856307 Redmove=2,3
+id=TestGame time=1493812858752 Greenmove=2,4
+id=TestGame time=1493812861088 Redmove=4,3
+id=TestGame time=1493812863451 Greenmove=1,2
+id=TestGame time=1493812865791 Redmove=2,5
+id=TestGame time=1493812868138 Greenmove=2,6
+id=TestGame time=1493812870480 Redmove=1,6
+id=TestGame time=1493812872842 Greenmove=5,6
+id=TestGame time=1493812875186 Redmove=4,6
+id=TestGame time=1493812877665 Greenmove=5,2
+id=TestGame time=1493812880009 Redmove=2,7
+id=TestGame time=1493812882518 Greenmove=3,6
+id=TestGame time=1493812884858 Redmove=6,7
+id=TestGame time=1493812887265 Greenmove=6,3
+id=TestGame time=1493812889606 Redmove=6,1
+id=TestGame time=1493812892501 Greenmove=3,2
+id=TestGame time=1493812894836 Redmove=7,4
+id=TestGame time=1493812897419 Greenmove=5,7
+id=TestGame time=1493812899748 Redmove=6,6
+id=TestGame time=1493812902208 Greenmove=7,2
+id=TestGame time=1493812904543 Redmove=3,5
+id=TestGame time=1493812906966 Greenmove=4,1
+id=TestGame time=1493812909300 Redmove=2,1
+id=TestGame time=1493812911673 Greenmove=5,3
+id=TestGame time=1493812914030 Redmove=7,3
+id=TestGame time=1493812916498 Greenmove=1,5
+id=TestGame time=1493812918832 Redmove=1,3
+id=TestGame time=1493812921413 Greenmove=1,7
+id=TestGame time=1493812923746 Redmove=7,1
+id=TestGame time=1493812926240 Greenmove=3,3
+id=TestGame time=1493812928572 Redmove=6,4
+id=TestGame time=1493812931000 Greenmove=3,1
+id=TestGame time=1493812933350 Redmove=1,1
+id=TestGame time=1493812935730 Greenmove=4,2
+id=TestGame time=1493812938054 Redmove=5,1
+id=TestGame time=1493812940398 Greenmove=null
+id=TestGame time=1493812940414 Green makes illegal move
+id=TestGame time=1493812946852 quit button pressed
+id=TestGame time=1493812955507 new game
+id=TestGame time=1493812955511 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1493812955613 initialized
+id=TestGame time=1493812955702 Redmove=6,6
+id=TestGame time=1493812958415 Greenmove=3,4
+id=TestGame time=1493812960787 Redmove=3,3
+id=TestGame time=1493812971169 Greenmove=3,2
+id=TestGame time=1493812973510 Redmove=2,3
+id=TestGame time=1493812990001 quit button pressed
+id=TestGame time=1493813307091 new game
+id=TestGame time=1493813307095 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1493813307207 initialized
+id=TestGame time=1493813307258 Redmove=6,3
+id=TestGame time=1493813309649 Greenmove=3,3
+id=TestGame time=1493813311990 Redmove=5,6
+id=TestGame time=1493813314362 Greenmove=4,6
+id=TestGame time=1493813316704 Redmove=2,2
+id=TestGame time=1493813319167 Greenmove=4,3
+id=TestGame time=1493813321509 Redmove=3,4
+id=TestGame time=1493813324062 Greenmove=2,3
+id=TestGame time=1493813326405 Redmove=3,7
+id=TestGame time=1493813328860 Greenmove=1,1
+id=TestGame time=1493813331200 Redmove=5,2
+id=TestGame time=1493813333556 Greenmove=3,5
+id=TestGame time=1493813335899 Redmove=2,6
+id=TestGame time=1493813338337 Greenmove=3,6
+id=TestGame time=1493813340676 Redmove=2,4
+id=TestGame time=1493813343150 Greenmove=1,5
+id=TestGame time=1493813345478 Redmove=1,4
+id=TestGame time=1493813348000 Greenmove=2,5
+id=TestGame time=1493813350335 Redmove=4,7
+id=TestGame time=1493813352797 Greenmove=2,7
+id=TestGame time=1493813355136 Redmove=1,3
+id=TestGame time=1493813357529 Greenmove=1,2
+id=TestGame time=1493813359863 Redmove=2,1
+id=TestGame time=1493813362230 Greenmove=3,1
+id=TestGame time=1493813364570 Redmove=1,6
+id=TestGame time=1493813366964 Greenmove=1,7
+id=TestGame time=1493813369312 Redmove=null
+id=TestGame time=1493813369325 Red makes illegal move
+id=TestGame time=1493817239299 new game
+id=TestGame time=1493817239299 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1493817239415 initialized
+id=TestGame time=1493817239468 Redmove=6,3
+id=TestGame time=1493817241872 Greenmove=3,3
+id=TestGame time=1493817244250 Redmove=3,4
+id=TestGame time=1493817246644 Greenmove=3,5
+id=TestGame time=1493817249121 Redmove=3,6
+id=TestGame time=1493817251647 Greenmove=3,7
+id=TestGame time=1493817254012 Redmove=2,6
+id=TestGame time=1493817256667 Greenmove=1,5
+id=TestGame time=1493817259027 Redmove=2,2
+id=TestGame time=1493817261629 Greenmove=1,1
+id=TestGame time=1493817263973 Redmove=2,3
+id=TestGame time=1493817266645 Greenmove=1,3
+id=TestGame time=1493817268990 Redmove=2,7
+id=TestGame time=1493817271589 Greenmove=2,4
+id=TestGame time=1493817273939 Redmove=1,6
+id=TestGame time=1493817276484 Greenmove=1,7
+id=TestGame time=1493817278865 Redmove=4,3
+id=TestGame time=1493817281304 Greenmove=4,6
+id=TestGame time=1493817283652 Redmove=1,4
+id=TestGame time=1493817286086 Greenmove=5,3
+id=TestGame time=1493817288469 Redmove=4,7
+id=TestGame time=1493817290899 Greenmove=5,6
+id=TestGame time=1493817293260 Redmove=3,2
+id=TestGame time=1493817295795 Greenmove=3,1
+id=TestGame time=1493817298141 Redmove=2,1
+id=TestGame time=1493817300586 Greenmove=1,2
+id=TestGame time=1493817302961 Redmove=5,7
+id=TestGame time=1493817305331 Greenmove=6,7
+id=TestGame time=1493817307705 Redmove=4,2
+id=TestGame time=1493817310170 Greenmove=5,2
+id=TestGame time=1493817312539 Redmove=6,2
+id=TestGame time=1493817314970 Greenmove=6,4
+id=TestGame time=1493817317325 Redmove=7,4
+id=TestGame time=1493817319761 Greenmove=6,5
+id=TestGame time=1493817322113 Redmove=6,6
+id=TestGame time=1493817324478 Greenmove=7,1
+id=TestGame time=1493817326847 Redmove=5,1
+id=TestGame time=1493817329217 Greenmove=2,5
+id=TestGame time=1493817331569 Redmove=7,2
+id=TestGame time=1493817333954 Greenmove=4,1
+id=TestGame time=1493817336310 Redmove=null
+id=TestGame time=1493817336339 Red makes illegal move
+id=TestGame time=1493817484616 quit button pressed
+id=TestGame time=1493819173484 new game
+id=TestGame time=1493819173484 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1493819173584 initialized
+id=TestGame time=1493819173631 Redmove=6,4
+id=TestGame time=1493819176109 Greenmove=3,3
+id=TestGame time=1493819178488 Redmove=5,6
+id=TestGame time=1493819180883 Greenmove=6,6
+id=TestGame time=1493819183245 Redmove=6,5
+id=TestGame time=1493819185635 Greenmove=4,6
+id=TestGame time=1493819187994 Redmove=3,5
+id=TestGame time=1493819190416 Greenmove=2,4
+id=TestGame time=1493819192790 Redmove=7,7
+id=TestGame time=1493819195192 Greenmove=7,4
+id=TestGame time=1493819197561 Redmove=4,7
+id=TestGame time=1493819199947 Greenmove=3,4
+id=TestGame time=1493819202346 Redmove=7,5
+id=TestGame time=1493819204722 Greenmove=3,6
+id=TestGame time=1493819207079 Redmove=3,7
+id=TestGame time=1493819209496 Greenmove=7,6
+id=TestGame time=1493819211888 Redmove=5,7
+id=TestGame time=1493819214249 Greenmove=6,7
+id=TestGame time=1493819216596 Redmove=1,3
+id=TestGame time=1493819218975 Greenmove=1,5
+id=TestGame time=1493819221331 Redmove=3,2
+id=TestGame time=1493819223714 Greenmove=2,2
+id=TestGame time=1493819226064 Redmove=8,6
+id=TestGame time=1493819228486 Greenmove=2,3
+id=TestGame time=1493819230835 Redmove=8,4
+id=TestGame time=1493819233198 Greenmove=2,5
+id=TestGame time=1493819235558 Redmove=7,3
+id=TestGame time=1493819237957 Greenmove=2,7
+id=TestGame time=1493819240333 Redmove=1,1
+id=TestGame time=1493819242697 Greenmove=4,2
+id=TestGame time=1493819245075 Redmove=2,8
+id=TestGame time=1493819247448 Greenmove=1,2
+id=TestGame time=1493819249844 Redmove=5,3
+id=TestGame time=1493819252221 Greenmove=1,4
+id=TestGame time=1493819254587 Redmove=2,6
+id=TestGame time=1493819256982 Greenmove=1,7
+id=TestGame time=1493819259341 Redmove=3,1
+id=TestGame time=1493819261786 Greenmove=4,3
+id=TestGame time=1493819264160 Redmove=7,8
+id=TestGame time=1493819266531 Greenmove=2,1
+id=TestGame time=1493819268929 Redmove=3,8
+id=TestGame time=1493819271296 Greenmove=5,2
+id=TestGame time=1493819273654 Redmove=4,1
+id=TestGame time=1493819276009 Greenmove=5,1
+id=TestGame time=1493819278399 Redmove=6,1
+id=TestGame time=1493819280782 Greenmove=6,2
+id=TestGame time=1493819283143 Redmove=6,3
+id=TestGame time=1493819285496 Greenmove=7,1
+id=TestGame time=1493819287944 Redmove=1,6
+id=TestGame time=1493819290346 Green failed: NoSuchElementException: No value present
+id=TestGame time=1493820333236 new game
+id=TestGame time=1493820333254 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1493820333358 initialized
+id=TestGame time=1493820333405 Redmove=6,5
+id=TestGame time=1493820335770 Green failed: Error: Unresolved compilation problems: 
+	s cannot be resolved to a variable
+	Syntax error on token "8", delete this token
+
+id=TestGame time=1493820351341 new game
+id=TestGame time=1493820351356 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1493820351456 initialized
+id=TestGame time=1493820351509 Redmove=6,5
+id=TestGame time=1493820353924 Green failed: Error: Unresolved compilation problem: 
+	s8 cannot be resolved to a variable
+
+id=TestGame time=1493820369695 new game
+id=TestGame time=1493820369711 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1493820369811 initialized
+id=TestGame time=1493820369858 Redmove=6,4
+id=TestGame time=1493820373073 Greenmove=3,3
+id=TestGame time=1493820375458 Redmove=4,3
+id=TestGame time=1493820379031 Greenmove=3,5
+id=TestGame time=1493820381396 Redmove=5,6
+id=TestGame time=1493820390436 Greenmove=4,2
+id=TestGame time=1493820392795 Redmove=3,2
+id=TestGame time=1493820425389 Greenmove=3,1
+id=TestGame time=1493820427764 Redmove=3,4
+id=TestGame time=1493820433785 Greenmove=4,6
+id=TestGame time=1493820436140 Redmove=3,6
+id=TestGame time=1493820441958 Greenmove=2,4
+id=TestGame time=1493820444312 Redmove=5,3
+id=TestGame time=1493820451225 Greenmove=3,7
+id=TestGame time=1493820453595 Redmove=2,1
+id=TestGame time=1493820556308 quit button pressed
+id=TestGame time=1493820560398 quit button pressed
+id=TestGame time=1493820564492 quit button pressed
+id=TestGame time=1493820567797 quit button pressed
+id=TestGame time=1493820571166 quit button pressed
+id=TestGame time=1493820847202 quit button pressed
+id=TestGame time=1493820864663 new game
+id=TestGame time=1493820864670 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1493820864914 initialized
+id=TestGame time=1493820864964 Redmove=6,3
+id=TestGame time=1493820867353 Greenmove=3,3
+id=TestGame time=1493820869710 Redmove=6,5
+id=TestGame time=1493820872084 Greenmove=4,6
+id=TestGame time=1493820874437 Redmove=3,5
+id=TestGame time=1493820877009 Greenmove=2,4
+id=TestGame time=1493820879376 Redmove=2,2
+id=TestGame time=1493820881773 Greenmove=4,2
+id=TestGame time=1493820884113 Redmove=3,7
+id=TestGame time=1493820886466 Greenmove=1,1
+id=TestGame time=1493820888813 Redmove=2,5
+id=TestGame time=1493820891157 Greenmove=2,6
+id=TestGame time=1493820893510 Redmove=1,7
+id=TestGame time=1493820895850 Greenmove=2,7
+id=TestGame time=1493820898219 Redmove=1,5
+id=TestGame time=1493820900568 Greenmove=4,7
+id=TestGame time=1493820902910 Redmove=1,3
+id=TestGame time=1493820905312 Greenmove=2,3
+id=TestGame time=1493820907654 Redmove=3,1
+id=TestGame time=1493820910121 Greenmove=5,3
+id=TestGame time=1493820912481 Redmove=5,7
+id=TestGame time=1493820915130 Greenmove=2,1
+id=TestGame time=1493820917484 Redmove=6,2
+id=TestGame time=1493820919814 Greenmove=2,8
+id=TestGame time=1493820922169 Redmove=5,1
+id=TestGame time=1493820924520 Greenmove=4,1
+id=TestGame time=1493820926857 Redmove=null
+id=TestGame time=1493820926871 Greenmove=4,3
+id=TestGame time=1493820929219 Redmove=3,2
+id=TestGame time=1493820931718 Greenmove=4,8
+id=TestGame time=1493820934084 Redmove=1,2
+id=TestGame time=1493820936661 Greenmove=6,1
+id=TestGame time=1493820939002 Redmove=1,4
+id=TestGame time=1493820941525 Greenmove=1,6
+id=TestGame time=1493820943869 Redmove=5,2
+id=TestGame time=1493820946285 Greenmove=1,8
+id=TestGame time=1493820948636 Redmove=3,4
+id=TestGame time=1493820951027 Greenmove=5,6
+id=TestGame time=1493820953366 Redmove=3,8
+id=TestGame time=1493820955836 Greenmove=6,6
+id=TestGame time=1493820958176 Redmove=3,6
+id=TestGame time=1493820960630 Greenmove=7,6
+id=TestGame time=1493820962971 Redmove=6,7
+id=TestGame time=1493820965523 Greenmove=7,4
+id=TestGame time=1493820967861 Redmove=7,7
+id=TestGame time=1493820970449 Greenmove=6,8
+id=TestGame time=1493820972800 Redmove=7,2
+id=TestGame time=1493820975420 Greenmove=7,3
+id=TestGame time=1493820977773 Redmove=8,3
+id=TestGame time=1493820980227 Greenmove=7,5
+id=TestGame time=1493820982559 Redmove=7,8
+id=TestGame time=1493820984962 Greenmove=8,5
+id=TestGame time=1493820987303 Redmove=5,8
+id=TestGame time=1493820989686 Greenmove=7,1
+id=TestGame time=1493820992027 Redmove=8,1
+id=TestGame time=1493820994361 Greenmove=8,7
+id=TestGame time=1493820996781 Redmove=6,4
+id=TestGame time=1493820999142 Greenmove=null
+id=TestGame time=1493820999149 Green makes illegal move
+id=TestGame time=1493921245409 quit button pressed
+id=TestGame time=1494997496212 new game
+id=TestGame time=1494997496217 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1494997496400 initialized
+id=TestGame time=1494997496451 Redmove=6,6
+id=TestGame time=1494997498805 Greenmove=null
+id=TestGame time=1494997498817 Green makes illegal move
+id=TestGame time=1494997532519 quit button pressed
+id=TestGame time=1494997536120 new game
+id=TestGame time=1494997536126 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1494997536270 initialized
+id=TestGame time=1494997536338 Redmove=6,4
+id=TestGame time=1494997539187 Greenmove=null
+id=TestGame time=1494997539195 Green makes illegal move
+id=TestGame time=1494997546885 quit button pressed
+id=TestGame time=1494997656099 new game
+id=TestGame time=1494997656103 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1494997656269 initialized
+id=TestGame time=1494997656366 Redmove=6,6
+id=TestGame time=1494997658725 Greenmove=null
+id=TestGame time=1494997658731 Green makes illegal move
+id=TestGame time=1494997666596 quit button pressed
+id=TestGame time=1494997690000 new game
+id=TestGame time=1494997690005 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1494997690119 initialized
+id=TestGame time=1494997690169 Redmove=6,3
+id=TestGame time=1494997692519 Green failed: Error: Unresolved compilation problem: 
+	MIN_VALMUE cannot be resolved or is not a field
+
+id=TestGame time=1494997711667 quit button pressed
+id=TestGame time=1494997718380 new game
+id=TestGame time=1494997718387 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1494997718492 initialized
+id=TestGame time=1494997718529 Redmove=6,5
+id=TestGame time=1494997720893 Greenmove=null
+id=TestGame time=1494997720914 Green makes illegal move
+id=TestGame time=1494997726523 quit button pressed
+id=TestGame time=1494997728203 new game
+id=TestGame time=1494997728210 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1494997728360 initialized
+id=TestGame time=1494997728426 Redmove=6,5
+id=TestGame time=1494997730774 Greenmove=null
+id=TestGame time=1494997730780 Green makes illegal move
+id=TestGame time=1494997794144 new game
+id=TestGame time=1494997794148 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1494997794259 initialized
+id=TestGame time=1494997794307 Redmove=6,4
+id=TestGame time=1494997796655 Greenmove=null
+id=TestGame time=1494997796662 Green makes illegal move
+id=TestGame time=1494997800615 quit button pressed
+id=TestGame time=1494997833327 new game
+id=TestGame time=1494997833331 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1494997833438 initialized
+id=TestGame time=1494997833486 Redmove=6,4
+id=TestGame time=1494997835873 Greenmove=3,3
+id=TestGame time=1494997838222 Redmove=4,3
+id=TestGame time=1494997840601 Greenmove=3,5
+id=TestGame time=1494997842955 Redmove=2,2
+id=TestGame time=1494997845319 Greenmove=1,1
+id=TestGame time=1494997847661 Redmove=5,6
+id=TestGame time=1494997850039 Greenmove=4,2
+id=TestGame time=1494997852393 Redmove=3,4
+id=TestGame time=1494997854776 Greenmove=4,6
+id=TestGame time=1494997857123 Redmove=3,7
+id=TestGame time=1494997859517 Greenmove=2,3
+id=TestGame time=1494997861867 Redmove=2,5
+id=TestGame time=1494997864226 Greenmove=1,6
+id=TestGame time=1494997866573 Redmove=1,2
+id=TestGame time=1494997868957 Greenmove=1,3
+id=TestGame time=1494997871295 Redmove=4,1
+id=TestGame time=1494997873646 Greenmove=3,6
+id=TestGame time=1494997875993 Redmove=2,7
+id=TestGame time=1494997878369 Greenmove=3,8
+id=TestGame time=1494997880723 Redmove=2,4
+id=TestGame time=1494997883096 Greenmove=3,2
+id=TestGame time=1494997885443 Redmove=1,5
+id=TestGame time=1494997887843 Greenmove=5,1
+id=TestGame time=1494997890177 Redmove=1,7
+id=TestGame time=1494997892592 Greenmove=5,2
+id=TestGame time=1494997894938 Redmove=6,1
+id=TestGame time=1494997897337 Greenmove=1,4
+id=TestGame time=1494997899682 Redmove=1,8
+id=TestGame time=1494997902054 Greenmove=5,3
+id=TestGame time=1494997904396 Redmove=6,2
+id=TestGame time=1494997906772 Greenmove=5,7
+id=TestGame time=1494997909120 Redmove=2,6
+id=TestGame time=1494997911515 Greenmove=6,3
+id=TestGame time=1494997913856 Redmove=4,8
+id=TestGame time=1494997916254 Greenmove=5,8
+id=TestGame time=1494997918595 Redmove=7,4
+id=TestGame time=1494997920975 Greenmove=2,8
+id=TestGame time=1494997923313 Redmove=2,1
+id=TestGame time=1494997925684 Greenmove=6,7
+id=TestGame time=1494997928024 Redmove=4,7
+id=TestGame time=1494997930383 Greenmove=6,6
+id=TestGame time=1494997932733 Redmove=7,7
+id=TestGame time=1494997935106 Greenmove=7,6
+id=TestGame time=1494997937445 Redmove=8,6
+id=TestGame time=1494997939820 Greenmove=3,1
+id=TestGame time=1494997942170 Redmove=6,8
+id=TestGame time=1494997944524 Greenmove=6,5
+id=TestGame time=1494997946872 Redmove=7,5
+id=TestGame time=1494997949222 Greenmove=7,1
+id=TestGame time=1494997951581 Redmove=7,2
+id=TestGame time=1494997953936 Greenmove=7,3
+id=TestGame time=1494997956285 Redmove=8,1
+id=TestGame time=1494997958632 Greenmove=7,8
+id=TestGame time=1494997960983 Redmove=8,2
+id=TestGame time=1494997963335 Greenmove=8,4
+id=TestGame time=1494997965677 Redmove=8,5
+id=TestGame time=1494997968024 Greenmove=8,7
+id=TestGame time=1494997970374 Redmove=8,8
+id=TestGame time=1494997972721 Greenmove=8,3
+id=TestGame time=1494997975060 finished reds=28 greens=36
+id=TestGame time=1494997981860 quit button pressed
+id=TestGame time=1494998062208 new game
+id=TestGame time=1494998062213 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1494998062323 initialized
+id=TestGame time=1494998062373 Redmove=6,6
+id=TestGame time=1494998064720 Greenmove=null
+id=TestGame time=1494998064730 Green makes illegal move
+id=TestGame time=1494998067903 quit button pressed
+id=TestGame time=1494998111142 new game
+id=TestGame time=1494998111146 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1494998111288 initialized
+id=TestGame time=1494998111339 Redmove=6,6
+id=TestGame time=1494998118694 Greenmove=null
+id=TestGame time=1494998118699 Green makes illegal move
+id=TestGame time=1494998127948 quit button pressed
+id=TestGame time=1495001608789 quit button pressed
+id=TestGame time=1495002108500 new game
+id=TestGame time=1495002108504 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1495002108635 initialized
+id=TestGame time=1495002108692 Redmove=6,3
+id=TestGame time=1495002110933 quit button pressed
+id=TestGame time=1495002124339 new game
+id=TestGame time=1495002124343 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1495002124452 initialized
+id=TestGame time=1495002124499 Redmove=6,6
+id=TestGame time=1495002131848 Greenmove=null
+id=TestGame time=1495002131853 Green makes illegal move
+id=TestGame time=1495002151460 new game
+id=TestGame time=1495002151465 red=reversiplayers.RandomPlayer green=reversiplayers.ReversiPlayerMinMax
+id=TestGame time=1495002151575 initialized
+id=TestGame time=1495002151626 Redmove=6,6
+id=TestGame time=1495002155121 quit button pressed
+id=TestGame time=1495013397879 quit button pressed
