@@ -13,6 +13,8 @@ public class ReversiUtils {
 	
 	private final long timeOut;
 	private long startTime;
+	private IMemMan<GameStateNode> mManager;
+	
 	public static class GameStateNode {
 
 		public GameBoard gameBoard;
@@ -36,11 +38,13 @@ public class ReversiUtils {
 	public ReversiUtils(long timeout) {
 		System.out.println("Created Utils with timeout: " + timeout);
 		this.timeOut = timeout == 0 ? Integer.MAX_VALUE : timeout;
+		
+		mManager = MemFactory.createVirtMem();
 	
 	}
 	
 	
-	public List<GameStateNode> getAllPossMoves(GameBoard gb, IMemoryManager<GameStateNode> mManager,
+	public List<GameStateNode> getAllPossMoves(GameBoard gb,
 			int player) {
 
 		ArrayList<GameStateNode> moves = new ArrayList<>();
@@ -49,9 +53,10 @@ public class ReversiUtils {
 			for (int j = 1; j <= 8; j++) {
 				Coordinates c = new Coordinates(i, j);
 				if (gb.checkMove(player, c)) {
-					GameStateNode node = new GameStateNode();
+					GameStateNode node = mManager.get(mManager.newNode());
 					node.coordinate = c;
 					node.gameBoard = gb;
+					node.points = 0;
 					moves.add(node);
 				}
 			}
@@ -66,7 +71,7 @@ public class ReversiUtils {
 		bestNode.points = Integer.MIN_VALUE;
 		
 		try {
-		for (GameStateNode node : getAllPossMoves(gb, null, player)) {
+		for (GameStateNode node : getAllPossMoves(gb, player)) {
 			System.out.println("Node before " + node );
 			
 			minMove(node, 10, gb.clone(), Integer.MIN_VALUE, Integer.MAX_VALUE, player, Utils.other(player));
@@ -98,7 +103,7 @@ public class ReversiUtils {
 		}
 
 		int max = alpha;
-		for (GameStateNode node : getAllPossMoves(gb, new MemoryManager(), maxPlayer)) {
+		for (GameStateNode node : getAllPossMoves(gb, maxPlayer)) {
 			
 			if (timeOut <= System.currentTimeMillis() - startTime) 
 				throw new TimeLimitExceededException();
@@ -126,7 +131,7 @@ public class ReversiUtils {
 		}
 
 		int min = beta;
-		for (GameStateNode node : getAllPossMoves(gb, new MemoryManager(), minPlayer)) {
+		for (GameStateNode node : getAllPossMoves(gb, minPlayer)) {
 
 			if (timeOut <= System.currentTimeMillis() - startTime) 
 				throw new TimeLimitExceededException();
