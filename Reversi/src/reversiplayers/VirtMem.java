@@ -36,7 +36,7 @@ public class VirtMem<T> implements IMemMan<T>{
 		//See if node at cur_id is free to overwrite
 		int start_cur_id = curId;
 		while(mem.get(curId).IN_USE){
-			iter(curId);
+			curId = iter(curId);
 			//This is only true if cur_id has looped through the entire memory and hasn't found a free node -> memory full
 			if(curId == start_cur_id)
 				throw new NoFreeNodesException();
@@ -120,10 +120,11 @@ public class VirtMem<T> implements IMemMan<T>{
 	public void set(int idOfNode, T object) throws IllegalArgumentException{
 		if(idOfNode < 0 || idOfNode >= max_length)
 			throw new IllegalArgumentException();
-		if(mem.get(idOfNode) == null || mem.get(idOfNode).IN_USE)
-			throw new IllegalArgumentException();
-		else
-			mem.set(idOfNode, new VirtMemNode<T>(object));
+		//if(mem.get(idOfNode) == null || mem.get(idOfNode).IN_USE)
+		//	throw new IllegalArgumentException();
+		else {
+			mem.get(idOfNode).object = object;
+		}
 	}
 	/**
 	 * Returns the List of Children of a node

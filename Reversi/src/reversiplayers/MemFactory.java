@@ -5,7 +5,7 @@ import reversiplayers.VirtMem;
 import reversiplayers.ReversiUtils.GameStateNode;
 
 public class MemFactory {
-	public static IMemMan<GameStateNode> createVirtMem() {
-		return new VirtMem<GameStateNode>();
+	public static IMemMan<GameStateNode> createVirtMem(int size) {
+		return new VirtMem<GameStateNode>(size);
 	}
 }
