@@ -899,3 +899,245 @@ id=TestGame time=1495113252226 Greenmove=null
 id=TestGame time=1495113252252 Redmove=8,1
 id=TestGame time=1495113254598 Greenmove=null
 id=TestGame time=1495113254621 finished reds=28 greens=36
+id=5000 time=1495385987806 new game
+id=5000 time=1495385987809 red=reversiplayers.ReversiPlayerMinMax green=reversiplayers.Mole
+id=5000 time=1495385998357 new game
+id=5000 time=1495385998361 red=reversiplayers.ReversiPlayerMinMax green=reversiplayers.Mole
+id=5000 time=1495385998500 initialized
+id=5000 time=1495386003539 Redmove=null
+id=5000 time=1495386003545 Red makes illegal move
+id=5000 time=1495386015695 quit button pressed
+id=5000 time=1495386052178 new game
+id=5000 time=1495386052181 red=reversiplayers.ReversiPlayerMinMax green=reversiplayers.Mole
+id=5000 time=1495386052333 initialized
+id=5000 time=1495386057357 Redmove=null
+id=5000 time=1495386057364 Red makes illegal move
+id=5000 time=1495386157355 new game
+id=5000 time=1495386157358 red=reversiplayers.ReversiPlayerMinMax green=reversiplayers.Mole
+id=5000 time=1495386157498 initialized
+id=5000 time=1495386162534 Redmove=null
+id=5000 time=1495386162540 Red makes illegal move
+id=5000 time=1495386187869 new game
+id=5000 time=1495386187871 red=reversiplayers.ReversiPlayerMinMax green=reversiplayers.Mole
+id=5000 time=1495386188015 initialized
+id=5000 time=1495386193052 Redmove=null
+id=5000 time=1495386193058 Red makes illegal move
+id=5000 time=1495386256523 new game
+id=5000 time=1495386256527 red=reversiplayers.ReversiPlayerMinMax green=reversiplayers.Mole
+id=5000 time=1495386256670 initialized
+id=5000 time=1495386261716 Redmove=null
+id=5000 time=1495386261722 Red makes illegal move
+id=5000 time=1495386307820 new game
+id=5000 time=1495386307823 red=reversiplayers.ReversiPlayerMinMax green=reversiplayers.Mole
+id=5000 time=1495386307953 initialized
+id=5000 time=1495386313011 Redmove=null
+id=5000 time=1495386313017 Red makes illegal move
+id=5000 time=1495386371962 new game
+id=5000 time=1495386371965 red=reversiplayers.ReversiPlayerMinMax green=reversiplayers.Mole
+id=5000 time=1495386372098 initialized
+id=5000 time=1495386377178 Redmove=6,6
+id=5000 time=1495386379972 quit button pressed
+id=5000 time=1495386424245 new game
+id=5000 time=1495386424249 red=reversiplayers.ReversiPlayerMinMax green=reversiplayers.Mole
+id=5000 time=1495386424397 initialized
+id=5000 time=1495386426924 quit button pressed
+id=5000 time=1495386445619 new game
+id=5000 time=1495386445622 red=reversiplayers.ReversiPlayerMinMax green=reversiplayers.Mole
+id=5000 time=1495386445780 initialized
+id=5000 time=1495386450860 Redmove=6,3
+id=5000 time=1495386455116 quit button pressed
+id=5000 time=1495386460718 new game
+id=5000 time=1495386460721 red=reversiplayers.ReversiPlayerMinMax green=reversiplayers.Mole
+id=5000 time=1495386460863 initialized
+id=5000 time=1495386465939 Redmove=6,3
+id=5000 time=1495386473269 Greenmove=3,3
+id=5000 time=1495386480652 Redmove=6,3
+id=5000 time=1495386480656 Red makes illegal move
+id=5000 time=1495386517587 quit button pressed
+id=5000 time=1495386521779 quit button pressed
+id=5000 time=1495386524051 quit button pressed
+id=5000 time=1495386526107 quit button pressed
+id=5000 time=1495386527827 quit button pressed
+id=5000 time=1495386529755 quit button pressed
+id=5000 time=1495386532036 new game
+id=5000 time=1495386532039 red=reversiplayers.ReversiPlayerMinMax green=reversiplayers.Mole
+id=5000 time=1495386532180 initialized
+id=5000 time=1495386537252 Redmove=6,3
+id=5000 time=1495386544586 Greenmove=3,3
+id=5000 time=1495386551946 Redmove=6,3
+id=5000 time=1495386551949 Red makes illegal move
+id=5000 time=1495386563355 quit button pressed
+id=5000 time=1495386564702 new game
+id=5000 time=1495386564705 red=reversiplayers.ReversiPlayerMinMax green=reversiplayers.Mole
+id=5000 time=1495386564846 initialized
+id=5000 time=1495386569881 Red failed: Error: Unresolved compilation problem: 
+	Syntax error, insert ";" to complete Statement
+
+id=5000 time=1495386572771 quit button pressed
+id=5000 time=1495386577826 new game
+id=5000 time=1495386577829 red=reversiplayers.ReversiPlayerMinMax green=reversiplayers.Mole
+id=5000 time=1495386577979 initialized
+id=5000 time=1495386583056 Redmove=6,3
+id=5000 time=1495386590382 Greenmove=3,3
+id=5000 time=1495386597746 Redmove=6,3
+id=5000 time=1495386597752 Red makes illegal move
+id=5000 time=1495386619962 quit button pressed
+id=5000 time=1495386764573 new game
+id=5000 time=1495386764576 red=reversiplayers.ReversiPlayerMinMax green=reversiplayers.Mole
+id=5000 time=1495386764715 initialized
+id=5000 time=1495386769782 Redmove=6,3
+id=5000 time=1495386769961 quit button pressed
+id=5000 time=1495386791926 new game
+id=5000 time=1495386791929 red=reversiplayers.Mole green=reversiplayers.ReversiPlayerMinMax
+id=5000 time=1495386792063 initialized
+id=5000 time=1495386797099 Redmove=6,3
+id=5000 time=1495386804458 Greenmove=3,3
+id=5000 time=1495386811787 Redmove=4,3
+id=5000 time=1495386814529 quit button pressed
+id=5000 time=1495386850452 new game
+id=5000 time=1495386850462 red=reversiplayers.Mole green=reversiplayers.ReversiPlayerMinMax
+id=5000 time=1495386850627 initialized
+id=5000 time=1495386855664 Redmove=6,3
+id=5000 time=1495386863043 Greenmove=3,3
+id=5000 time=1495386870369 Redmove=4,3
+id=5000 time=1495386877743 Greenmove=3,3
+id=5000 time=1495386877746 Green makes illegal move
+id=5000 time=1495386927121 quit button pressed
+id=5000 time=1495387008885 new game
+id=5000 time=1495387008889 red=reversiplayers.Mole green=reversiplayers.ReversiPlayerMinMax
+id=5000 time=1495387009044 initialized
+id=5000 time=1495387014077 Redmove=6,3
+id=5000 time=1495387021439 Greenmove=3,3
+id=5000 time=1495387026040 quit button pressed
+id=5000 time=1495387124106 new game
+id=5000 time=1495387124109 red=reversiplayers.Mole green=reversiplayers.ReversiPlayerMinMax
+id=5000 time=1495387124242 initialized
+id=5000 time=1495387129279 Redmove=6,3
+id=5000 time=1495387136688 Greenmove=3,3
+id=5000 time=1495387144015 Redmove=4,3
+id=5000 time=1495387151439 Greenmove=3,5
+id=5000 time=1495387158769 Redmove=2,2
+id=5000 time=1495387166754 Greenmove=1,1
+id=5000 time=1495387174078 Redmove=4,6
+id=5000 time=1495387181549 Greenmove=3,7
+id=5000 time=1495387188878 Redmove=2,3
+id=5000 time=1495387196300 Greenmove=4,2
+id=5000 time=1495387203626 Redmove=6,6
+id=5000 time=1495387211491 Greenmove=1,3
+id=5000 time=1495387218817 Redmove=4,1
+id=5000 time=1495387226300 Greenmove=5,1
+id=5000 time=1495387229030 quit button pressed
+id=5000 time=1495387246054 new game
+id=5000 time=1495387246058 red=reversiplayers.Mole green=reversiplayers.ReversiPlayerMinMax
+id=5000 time=1495387246208 initialized
+id=5000 time=1495387251244 Redmove=6,3
+id=5000 time=1495387258662 Greenmove=3,3
+id=5000 time=1495387265991 Redmove=4,3
+id=5000 time=1495387273474 Greenmove=5,3
+id=5000 time=1495387280825 Redmove=2,3
+id=5000 time=1495387288884 Greenmove=2,2
+id=5000 time=1495387296208 Redmove=6,5
+id=5000 time=1495387304014 Greenmove=2,4
+id=5000 time=1495387311340 Redmove=1,1
+id=5000 time=1495387316765 quit button pressed
+id=5000 time=1495387438989 new game
+id=5000 time=1495387438992 red=reversiplayers.Mole green=reversiplayers.ReversiPlayerMinMax
+id=5000 time=1495387439201 initialized
+id=5000 time=1495387444224 Redmove=6,3
+id=5000 time=1495387457919 Green exceeds time limit
+id=5000 time=1495387465420 quit button pressed
+id=5000 time=1495387477739 new game
+id=5000 time=1495387477742 red=reversiplayers.Mole green=reversiplayers.ReversiPlayerMinMax
+id=5000 time=1495387477962 initialized
+id=5000 time=1495387482987 Redmove=6,3
+id=5000 time=1495387496777 Green exceeds time limit
+id=5000 time=1495387555925 new game
+id=5000 time=1495387555928 red=reversiplayers.Mole green=reversiplayers.ReversiPlayerMinMax
+id=5000 time=1495387556136 initialized
+id=5000 time=1495387561161 Redmove=6,3
+id=5000 time=1495387574209 Green exceeds time limit
+id=5000 time=1495387582515 quit button pressed
+id=5000 time=1495387662884 new game
+id=5000 time=1495387662888 red=reversiplayers.Mole green=reversiplayers.ReversiPlayerMinMax
+id=5000 time=1495387663108 initialized
+id=5000 time=1495387668129 Redmove=6,3
+id=5000 time=1495387680189 Greenmove=3,3
+id=5000 time=1495387687513 Redmove=4,3
+id=5000 time=1495387699594 Greenmove=5,3
+id=5000 time=1495387706921 Redmove=2,3
+id=5000 time=1495387720560 Green exceeds time limit
+id=5000 time=1495387780730 new game
+id=5000 time=1495387780733 red=reversiplayers.Mole green=reversiplayers.ReversiPlayerMinMax
+id=5000 time=1495387780951 initialized
+id=5000 time=1495387785975 Redmove=6,3
+id=5000 time=1495387798985 Green exceeds time limit
+id=5000 time=1495387870933 new game
+id=5000 time=1495387870936 red=reversiplayers.Mole green=reversiplayers.ReversiPlayerMinMax
+id=5000 time=1495387871145 initialized
+id=5000 time=1495387876169 Redmove=6,3
+id=5000 time=1495387888806 Green exceeds time limit
+id=5000 time=1495387954216 new game
+id=5000 time=1495387954219 red=reversiplayers.Mole green=reversiplayers.ReversiPlayerMinMax
+id=5000 time=1495387954431 initialized
+id=5000 time=1495387959460 Redmove=6,3
+id=5000 time=1495387971491 Greenmove=3,3
+id=5000 time=1495387978819 Redmove=4,3
+id=5000 time=1495387990847 Greenmove=5,3
+id=5000 time=1495387996016 quit button pressed
+id=5000 time=1495388038712 new game
+id=5000 time=1495388038714 red=reversiplayers.Mole green=reversiplayers.ReversiPlayerMinMax
+id=5000 time=1495388038931 initialized
+id=5000 time=1495388043954 Redmove=6,3
+id=5000 time=1495388055985 Greenmove=3,3
+id=5000 time=1495388063359 Redmove=4,3
+id=5000 time=1495388075394 Greenmove=3,5
+id=5000 time=1495388082721 Redmove=2,2
+id=5000 time=1495388094757 Greenmove=1,1
+id=5000 time=1495388102078 Redmove=4,6
+id=5000 time=1495388114118 Greenmove=3,7
+id=5000 time=1495388121445 Redmove=2,3
+id=5000 time=1495388133510 Greenmove=4,2
+id=5000 time=1495388140841 Redmove=6,6
+id=5000 time=1495388153753 Green exceeds time limit
+id=5000 time=1495388363844 new game
+id=5000 time=1495388363847 red=reversiplayers.Mole green=reversiplayers.ReversiPlayerMinMax
+id=5000 time=1495388364069 initialized
+id=5000 time=1495388369100 Redmove=6,3
+id=5000 time=1495388381174 Greenmove=3,3
+id=5000 time=1495388388513 Redmove=4,3
+id=5000 time=1495388400544 Greenmove=3,5
+id=5000 time=1495388407879 Redmove=2,2
+id=5000 time=1495388419927 Greenmove=1,1
+id=5000 time=1495388427254 Redmove=4,6
+id=5000 time=1495388439289 Greenmove=3,7
+id=5000 time=1495388446618 Redmove=2,3
+id=5000 time=1495388458643 Greenmove=4,2
+id=5000 time=1495388465971 Redmove=6,6
+id=5000 time=1495388478005 Greenmove=1,3
+id=5000 time=1495388485332 Redmove=4,1
+id=5000 time=1495388497363 Greenmove=5,3
+id=5000 time=1495388504692 Redmove=4,7
+id=5000 time=1495388516728 Greenmove=5,1
+id=5000 time=1495388520534 quit button pressed
+id=5000 time=1495388597203 new game
+id=5000 time=1495388597206 red=reversiplayers.Mole green=reversiplayers.ReversiPlayerMinMax
+id=5000 time=1495388597415 initialized
+id=5000 time=1495388602438 Redmove=6,3
+id=5000 time=1495388614468 Greenmove=3,3
+id=5000 time=1495388621798 Redmove=4,3
+id=5000 time=1495388629072 new game
+id=5000 time=1495388629075 red=reversiplayers.Mole green=reversiplayers.ReversiPlayerMinMax
+id=5000 time=1495388629307 initialized
+id=5000 time=1495388634004 new game
+id=5000 time=1495388634007 red=reversiplayers.Mole green=reversiplayers.ReversiPlayerMinMax
+id=5000 time=1495388634210 initialized
+id=5000 time=1495388634334 Redmove=6,3
+id=5000 time=1495388639244 Redmove=6,3
+id=5000 time=1495388646456 Greenmove=3,3
+id=5000 time=1495388651346 Greenmove=3,3
+id=5000 time=1495388653916 Redmove=4,3
+id=5000 time=1495388658680 Redmove=4,3
+id=5000 time=1495388668532 Green exceeds time limit
+id=5000 time=1495388670939 Greenmove=5,3
+id=5000 time=1495388678277 Redmove=2,3
+id=5000 time=1495388690320 Greenmove=2,2
