@@ -25,7 +25,7 @@ public class ReversiPlayerMinMax implements ReversiPlayer {
 	 */
 	public void initialize(int color, long timeout) {
 		this.color = color;
-		utils = new ReversiUtils(timeout - 300);
+		utils = new ReversiUtils(timeout - 400);
 		
 		if (color == GameBoard.RED) {
 			System.out.println("RandomPlayer ist Spieler RED.");

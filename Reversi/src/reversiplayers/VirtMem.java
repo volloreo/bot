@@ -12,6 +12,8 @@ public class VirtMem<T> implements IMemMan<T>{
 	private int curId = 0;	//id pointing at next free node
 	private ArrayList<VirtMemNode<T>> mem;
 	private final int max_length;
+	private long time;
+	private static final boolean DEBUG = false;
 	
 	//CONSTRUCTORS
 	public VirtMem(){
@@ -22,6 +24,12 @@ public class VirtMem<T> implements IMemMan<T>{
 		mem = new ArrayList<VirtMemNode<T>>(max_length);
 		for(int i = 0; i < max_length; i++)
 			mem.add(new VirtMemNode<T>());
+	}
+	
+	private void measureTime(String msg) {
+		if (DEBUG) {
+			System.out.println(msg + ( System.nanoTime() - time) + " NS");
+		}
 	}
 	
 	//PUBLIC FUNCTIONS
@@ -54,9 +62,11 @@ public class VirtMem<T> implements IMemMan<T>{
 	 * @throws NoFreeNodesException Is thrown when all nodes in the memory are in use
 	 */
 	public int newNode(T object) throws NoFreeNodesException{
+		time = System.nanoTime();
 		int newi = newNode();
 		if(newi >= 0)
 			mem.get(newi).object = object;
+		measureTime("new Node took: " );
 		return newi;
 	}
 	/**
@@ -66,12 +76,15 @@ public class VirtMem<T> implements IMemMan<T>{
 	 * @throws IllegalArgumentException idOfParent or idOfChild was invalid
 	 */
 	public void linkNodes(int idOfParent, int idOfChild) throws IllegalArgumentException{
+
+		time = System.nanoTime();
 		if(idOfParent < 0 || idOfParent >= max_length || idOfChild < 0 || idOfChild >= max_length)
 			throw new IllegalArgumentException();
 		mem.get(idOfParent).children.add(idOfChild);
 		//Child obviously in use, this could be used to raise nodes "from the dead" -> not intended
 		if(mem.get(idOfParent).IN_USE)
 			mem.get(idOfChild).IN_USE = true;
+		measureTime("Link nodes took: " );
 	}
 	/**
 	 * Attempts to set one node as head of a tree, all descendants of the head is safe from refreshMemory
@@ -80,10 +93,13 @@ public class VirtMem<T> implements IMemMan<T>{
 	 * @throws IllegalArgumentException idOfHead was invalid
 	 */
 	public void setHeadNode(int idOfHead) throws IllegalArgumentException{
+
+		time = System.nanoTime();
 		if(idOfHead < 0 || idOfHead >= max_length)
 			throw new IllegalArgumentException();
 		cur_head = idOfHead;
 		refreshMemory();
+		measureTime("setHeadNode took: ");
 	}
 	/**
 	 * Makes all nodes not part of the tree of head node inaccessible and overwriteable
@@ -107,9 +123,12 @@ public class VirtMem<T> implements IMemMan<T>{
 	 * @return requested object, null if node doesn't exist or idOfNode invalid
 	 */
 	public T get(int idOfNode){
+		time = System.nanoTime();
 		if(idOfNode < 0 || idOfNode >= max_length)
 			return null;
-		return mem.get(idOfNode).object;
+		T obj =  mem.get(idOfNode).object;
+		measureTime("Get Took:" );
+		return obj;
 	}
 	/**
 	 * Replaces the object in a node
@@ -118,6 +137,7 @@ public class VirtMem<T> implements IMemMan<T>{
 	 * @throws IllegalArgumentException idOfNode was invalid, or Node doesnt exist
 	 */
 	public void set(int idOfNode, T object) throws IllegalArgumentException{
+		time = System.nanoTime();
 		if(idOfNode < 0 || idOfNode >= max_length)
 			throw new IllegalArgumentException();
 		//if(mem.get(idOfNode) == null || mem.get(idOfNode).IN_USE)
@@ -125,6 +145,8 @@ public class VirtMem<T> implements IMemMan<T>{
 		else {
 			mem.get(idOfNode).object = object;
 		}
+
+		measureTime("Set Took" );
 	}
 	/**
 	 * Returns the List of Children of a node
@@ -147,11 +169,13 @@ public class VirtMem<T> implements IMemMan<T>{
 	 * @throws IllegalArgumentException idOfNode was invalid, or Node doesnt exist
 	 */
 	public ArrayList<Integer> getGrandchildren(int idOfNode) throws IllegalArgumentException{
+		time = System.nanoTime();
 		if(idOfNode < 0 || idOfNode >= max_length)
 			throw new IllegalArgumentException();
 		ArrayList<Integer> grand_children = new ArrayList<Integer>();
 		for(int i = 0; i < mem.get(idOfNode).children.size(); i++)
 			grand_children.addAll(getChildren(mem.get(idOfNode).children.get(i)));
+		measureTime("GetGrandchildren took:");
 		return grand_children;
 	}
 	
@@ -159,9 +183,11 @@ public class VirtMem<T> implements IMemMan<T>{
 	
 	//PRIVATE FUNCTIONS
 	private void set_parent_children_true(int id_parent){
-		mem.get(id_parent).IN_USE = true;
-		for(int i = 0; i < mem.get(id_parent).children.size(); i++){
-			set_parent_children_true(mem.get(id_parent).children.get(i));
+		VirtMemNode<T> node = mem.get(id_parent);
+		node.IN_USE = true;
+		
+		for(int i = 0; i < node.children.size(); i++){
+			set_parent_children_true(node.children.get(i));
 		}
 	}
 	private int iter(int i){
