@@ -27,6 +27,7 @@ public class ReversiUtils {
 		
 		mManager = MemFactory.createVirtMem(1600000);
 		
+		//Set Root Node
 		headNode = new GameStateNode();
 		headNode.address = 0;
 		mManager.setHeadNode(0);
@@ -39,12 +40,16 @@ public class ReversiUtils {
 			System.out.println(msg);
 	}
 
+	
 	public List<GameStateNode> getAllPossMoves(GameStateNode parentNode, int player) throws TimeLimitExceededException {
 
 		//Check if move was already calculated.
 		List<Integer> children = mManager.getChildren(parentNode.address);
-		
-		if (!children.isEmpty()) {
+		/*
+		if (!parentNode.finishedCalc) {
+			System.err.println("Found node which children werent calc successfully");
+		}*/
+		if (parentNode.finishedCalc  && !children.isEmpty()) {
 			//log("GetAllPossMoves:  Found children List for parent node. Returning list.");
 			return children.stream().map(c -> mManager.get(c)).collect(Collectors.toList());
 		}
@@ -55,8 +60,10 @@ public class ReversiUtils {
 				
 
 				Coordinates c = new Coordinates(i, j);
+				checkTime();
 				
 				if (parentNode.gameBoard.checkMove(player, c)) {
+					// Add new Node and init it, if it is a legal move.
 					int nodeIndex;
 					try {
 						nodeIndex = mManager.newNode();
@@ -73,6 +80,7 @@ public class ReversiUtils {
 					}
 
 					node.coordinate = c;
+					node.finishedCalc = false;
 					node.address = nodeIndex;
 					node.gameBoard = parentNode.gameBoard.clone();
 					node.points = 0;
@@ -82,6 +90,7 @@ public class ReversiUtils {
 				}
 			}
 		}
+		parentNode.finishedCalc = true;
 		return moves;
 	}
 
@@ -112,10 +121,10 @@ public class ReversiUtils {
 		
 		GameStateNode bestNode = new GameStateNode();
 		bestNode.points = Integer.MIN_VALUE;
-		for (int i = 0;; i++) {
+		for (int i = 0; i < 2; i++) {
 			try {
 				for (GameStateNode node : getAllPossMoves(headNode, player)) {
-					minMove(node, startDepth + i, Integer.MIN_VALUE, Integer.MAX_VALUE, player, Utils.other(player));
+					minMove(node, startDepth + 0, Integer.MIN_VALUE, Integer.MAX_VALUE, player, Utils.other(player));
 
 					if (bestNode.points < node.points)
 						bestNode = node;
@@ -128,11 +137,27 @@ public class ReversiUtils {
 			log("GetBestMove() increasing Depth: " + i);
 		}
 		log("getBestMove() returning: " + bestNode);
+		
+		if(!gb.checkMove(player, bestNode.coordinate)) {
+			System.out.println("RETURN MOVE INVALID!!!!");
+			for (int i = 1; i <= 8; i++) {
+				for (int j = 1; j <= 8; j++) {
+					Coordinates c = new Coordinates(i, j);
+					if (gb.checkMove(player, c)) {
+						bestNode.coordinate = c;
+						bestNode.gameBoard = gb.clone();
+						bestNode.gameBoard.checkMove(player, c);
+						bestNode.gameBoard.makeMove(player, c);
+						return bestNode;
+					}
+				}
+			}
+		}
 		return bestNode;
 	}
 
 	private int getHeuristicPoints(GameBoard gb, int player) {
-		return gb.countStones(player) - gb.countStones(Utils.other(player));
+		return gb.countStones(player) ;//- gb.countStones(Utils.other(player));
 	}
 	
 	private void checkTime() throws TimeLimitExceededException {
@@ -217,6 +242,7 @@ public class ReversiUtils {
 
 		public GameBoard gameBoard;
 		public int points;
+		public boolean finishedCalc = false;
 		public int address;
 		public Coordinates coordinate;
 		public List<GameStateNode> children = new ArrayList<>(7);
