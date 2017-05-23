@@ -1529,3 +1529,408 @@ id=5000 time=1495399129135 Redmove=8,6
 id=5000 time=1495399136499 Greenmove=8,7
 id=5000 time=1495399138864 finished reds=28 greens=36
 id=5000 time=1495399151479 quit button pressed
+id=5000 time=1495549460252 new game
+id=5000 time=1495549460256 red=reversiplayers.AlphaBetaMem green=reversiplayers.AlphaBetaWithoutMemManager
+id=5000 time=1495549460418 initialized
+id=5000 time=1495549470456 Redmove=1,1
+id=5000 time=1495549470460 Red makes illegal move
+id=5000 time=1495549508557 new game
+id=5000 time=1495549508560 red=reversiplayers.AlphaBetaMem green=reversiplayers.AlphaBetaWithoutMemManager
+id=5000 time=1495549508684 initialized
+id=5000 time=1495549518720 Redmove=1,1
+id=5000 time=1495549518724 Red makes illegal move
+id=5000 time=1495549608301 new game
+id=5000 time=1495549608304 red=reversiplayers.AlphaBetaMem green=reversiplayers.AlphaBetaWithoutMemManager
+id=5000 time=1495549608433 initialized
+id=5000 time=1495549618473 Redmove=1,1
+id=5000 time=1495549618477 Red makes illegal move
+id=5000 time=1495549679810 new game
+id=5000 time=1495549679814 red=reversiplayers.AlphaBetaMem green=reversiplayers.AlphaBetaWithoutMemManager
+id=5000 time=1495549679934 initialized
+id=5000 time=1495549684968 Redmove=null
+id=5000 time=1495549684976 Red makes illegal move
+id=5000 time=1495549689436 quit button pressed
+id=5000 time=1495549778885 new game
+id=5000 time=1495549778888 red=reversiplayers.AlphaBetaMem green=reversiplayers.AlphaBetaWithoutMemManager
+id=5000 time=1495549779015 initialized
+id=5000 time=1495549784211 Redmove=6,3
+id=5000 time=1495549796543 Greenmove=3,5
+id=5000 time=1495549804017 Redmove=3,6
+id=5000 time=1495549807531 quit button pressed
+id=5000 time=1495549876009 new game
+id=5000 time=1495549876012 red=reversiplayers.AlphaBetaMem green=reversiplayers.AlphaBetaWithoutMemManager
+id=5000 time=1495549876148 initialized
+id=5000 time=1495549881375 Redmove=6,3
+id=5000 time=1495549884098 quit button pressed
+id=5000 time=1495549917151 new game
+id=5000 time=1495549917155 red=reversiplayers.AlphaBetaMem green=reversiplayers.AlphaBetaWithoutMemManager
+id=5000 time=1495549917282 initialized
+id=5000 time=1495549927318 Redmove=6,3
+id=5000 time=1495549933146 quit button pressed
+id=5000 time=1495549946076 new game
+id=5000 time=1495549946080 red=reversiplayers.AlphaBetaMem green=reversiplayers.AlphaBetaWithoutMemManager
+id=5000 time=1495549946198 initialized
+id=5000 time=1495549956246 Redmove=1,1
+id=5000 time=1495549956250 Red makes illegal move
+id=5000 time=1495549993902 new game
+id=5000 time=1495549993905 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMem
+id=5000 time=1495549994031 initialized
+id=5000 time=1495550004094 Redmove=6,6
+id=5000 time=1495550016413 Greenmove=7,7
+id=5000 time=1495550016417 Green makes illegal move
+id=5000 time=1495550243182 new game
+id=5000 time=1495550243185 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMem
+id=5000 time=1495550243313 initialized
+id=5000 time=1495550253362 Redmove=6,6
+id=5000 time=1495550260726 Greenmove=3,6
+id=5000 time=1495550273064 Redmove=5,3
+id=5000 time=1495550280432 Greenmove=6,5
+id=5000 time=1495550292768 Redmove=6,4
+id=5000 time=1495550300189 Greenmove=6,3
+id=5000 time=1495550312522 Redmove=3,5
+id=5000 time=1495550320027 Greenmove=3,4
+id=5000 time=1495550332363 Redmove=2,4
+id=5000 time=1495550339910 Greenmove=4,3
+id=5000 time=1495550352355 Redmove=2,5
+id=5000 time=1495550360307 Greenmove=6,7
+id=5000 time=1495550372732 Redmove=7,3
+id=5000 time=1495550380874 Greenmove=3,3
+id=5000 time=1495550393294 Redmove=4,2
+id=5000 time=1495550402102 Greenmove=1,4
+id=5000 time=1495550414528 Redmove=1,5
+id=5000 time=1495550422681 Greenmove=1,6
+id=5000 time=1495550422712 quit button pressed
+id=5000 time=1495550423479 quit button pressed
+id=5000 time=1495550424102 quit button pressed
+id=5000 time=1495550426616 new game
+id=5000 time=1495550426616 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMem
+id=5000 time=1495550426734 initialized
+id=5000 time=1495550436794 Redmove=6,6
+id=5000 time=1495550444217 Greenmove=3,6
+id=5000 time=1495550456622 Redmove=5,3
+id=5000 time=1495550464079 Greenmove=6,5
+id=5000 time=1495550476411 Redmove=6,4
+id=5000 time=1495550483830 Greenmove=6,3
+id=5000 time=1495550496159 Redmove=3,5
+id=5000 time=1495550503694 Greenmove=3,4
+id=5000 time=1495550516026 Redmove=2,4
+id=5000 time=1495550523593 Greenmove=4,3
+id=5000 time=1495550535924 Redmove=2,5
+id=5000 time=1495550543777 Greenmove=6,7
+id=5000 time=1495550556107 Redmove=7,3
+id=5000 time=1495550563695 Greenmove=3,3
+id=5000 time=1495550573701 Redmove=4,2
+id=5000 time=1495550580113 Greenmove=1,4
+id=5000 time=1495550590118 Redmove=1,5
+id=5000 time=1495550595881 Greenmove=1,6
+id=5000 time=1495550605887 Redmove=2,6
+id=5000 time=1495550611783 Greenmove=7,4
+id=5000 time=1495550621789 Redmove=5,6
+id=5000 time=1495550628644 Greenmove=1,7
+id=5000 time=1495550638650 Redmove=4,6
+id=5000 time=1495550644949 Greenmove=4,7
+id=5000 time=1495550654955 Redmove=4,8
+id=5000 time=1495550661120 Greenmove=6,2
+id=5000 time=1495550671125 Redmove=8,4
+id=5000 time=1495550677531 Greenmove=1,3
+id=5000 time=1495550687536 Redmove=5,2
+id=5000 time=1495550693230 Greenmove=5,1
+id=5000 time=1495550703234 Redmove=3,1
+id=5000 time=1495550708701 Greenmove=8,2
+id=5000 time=1495550718706 Redmove=2,3
+id=5000 time=1495550724388 Greenmove=5,7
+id=5000 time=1495550734393 Redmove=5,8
+id=5000 time=1495550739785 Greenmove=1,2
+id=5000 time=1495550749790 Redmove=8,3
+id=5000 time=1495550755036 Greenmove=8,5
+id=5000 time=1495550765042 Redmove=3,7
+id=5000 time=1495550770211 Greenmove=6,8
+id=5000 time=1495550780217 Redmove=6,1
+id=5000 time=1495550784996 quit button pressed
+id=5000 time=1495550802546 new game
+id=5000 time=1495550802550 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMem
+id=5000 time=1495550802677 initialized
+id=5000 time=1495550812724 Redmove=6,6
+id=5000 time=1495550825055 Greenmove=3,4
+id=5000 time=1495550837401 Redmove=6,3
+id=5000 time=1495550849779 Greenmove=6,4
+id=5000 time=1495550862107 Redmove=4,3
+id=5000 time=1495550874437 Greenmove=4,6
+id=5000 time=1495550886781 Redmove=6,5
+id=5000 time=1495550899151 Greenmove=4,2
+id=5000 time=1495550911513 Redmove=2,4
+id=5000 time=1495550923866 Greenmove=2,3
+id=5000 time=1495550936242 Redmove=4,1
+id=5000 time=1495550948601 Greenmove=1,4
+id=5000 time=1495550961002 Redmove=3,5
+id=5000 time=1495550973378 Greenmove=3,6
+id=5000 time=1495550985759 Redmove=1,2
+id=5000 time=1495550998158 Greenmove=7,5
+id=5000 time=1495551010532 Redmove=3,7
+id=5000 time=1495551022901 Greenmove=7,4
+id=5000 time=1495551035230 Redmove=3,3
+id=5000 time=1495551047558 Greenmove=5,1
+id=5000 time=1495551059888 Redmove=6,1
+id=5000 time=1495551072216 Greenmove=5,6
+id=5000 time=1495551084546 Redmove=8,5
+id=5000 time=1495551096876 Greenmove=2,8
+id=5000 time=1495551109198 Redmove=4,7
+id=5000 time=1495551121526 Greenmove=2,5
+id=5000 time=1495551133855 Redmove=7,3
+id=5000 time=1495551146186 Greenmove=5,3
+id=5000 time=1495551158514 Redmove=2,2
+id=5000 time=1495551170844 Greenmove=8,2
+id=5000 time=1495551183172 Redmove=5,2
+id=5000 time=1495551195502 Greenmove=1,3
+id=5000 time=1495551207830 Redmove=1,5
+id=5000 time=1495551220161 Greenmove=5,7
+id=5000 time=1495551232487 Redmove=6,2
+id=5000 time=1495551244816 Greenmove=8,4
+id=5000 time=1495551257142 Redmove=3,8
+id=5000 time=1495551269469 Greenmove=4,8
+id=5000 time=1495551281799 Redmove=5,8
+id=5000 time=1495551294128 Greenmove=6,8
+id=5000 time=1495551306455 Redmove=7,7
+id=5000 time=1495551318784 Greenmove=3,2
+id=5000 time=1495551331113 Redmove=8,3
+id=5000 time=1495551343440 Greenmove=1,1
+id=5000 time=1495551355785 Redmove=6,7
+id=5000 time=1495551368114 Greenmove=3,1
+id=5000 time=1495551380444 Redmove=8,1
+id=5000 time=1495551392775 Greenmove=7,8
+id=5000 time=1495551405101 Redmove=2,1
+id=5000 time=1495551417429 Greenmove=7,1
+id=5000 time=1495551429755 Redmove=7,2
+id=5000 time=1495551437844 Greenmove=2,6
+id=5000 time=1495551445836 Redmove=2,7
+id=5000 time=1495551453291 Greenmove=8,8
+id=5000 time=1495551460674 Redmove=1,7
+id=5000 time=1495551468008 Greenmove=7,6
+id=5000 time=1495551475348 Redmove=1,6
+id=5000 time=1495551482681 Greenmove=1,8
+id=5000 time=1495551490014 Redmove=8,6
+id=5000 time=1495551497341 Greenmove=8,7
+id=5000 time=1495551499666 finished reds=28 greens=36
+id=5000 time=1495554628600 new game
+id=5000 time=1495554628604 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMem
+id=5000 time=1495554628735 initialized
+id=5000 time=1495554638448 quit button pressed
+id=5000 time=1495554674921 new game
+id=5000 time=1495554674925 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495554675058 initialized
+id=5000 time=1495554679528 quit button pressed
+id=5000 time=1495555324609 new game
+id=5000 time=1495555324625 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495555350970 new game
+id=5000 time=1495555350970 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495555351111 initialized
+id=5000 time=1495555361157 Redmove=6,6
+id=5000 time=1495555368550 Green failed: NullPointerException: null
+id=5000 time=1495555392987 new game
+id=5000 time=1495555392987 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495555393128 initialized
+id=5000 time=1495555394268 quit button pressed
+id=5000 time=1495555397304 new game
+id=5000 time=1495555397304 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495555397445 initialized
+id=5000 time=1495555407502 Redmove=6,6
+id=5000 time=1495555415461 Greenmove=null
+id=5000 time=1495555415461 Green makes illegal move
+id=5000 time=1495555421144 quit button pressed
+id=5000 time=1495555501416 new game
+id=5000 time=1495555501416 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495555501557 initialized
+id=5000 time=1495555511617 Redmove=6,6
+id=5000 time=1495555519450 Greenmove=5,6
+id=5000 time=1495555531848 Redmove=6,3
+id=5000 time=1495555539818 Greenmove=3,4
+id=5000 time=1495555552238 Redmove=4,6
+id=5000 time=1495555556563 quit button pressed
+id=5000 time=1495555559941 quit button pressed
+id=5000 time=1495555560314 Greenmove=3,4
+id=5000 time=1495555560318 Green makes illegal move
+id=5000 time=1495555563532 quit button pressed
+id=5000 time=1495555566293 quit button pressed
+id=5000 time=1495555573739 quit button pressed
+id=5000 time=1495555585969 quit button pressed
+id=5000 time=1495555620064 new game
+id=5000 time=1495555620064 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495555620204 initialized
+id=5000 time=1495555630245 Redmove=6,6
+id=5000 time=1495555638079 Greenmove=5,6
+id=5000 time=1495555650504 Redmove=6,3
+id=5000 time=1495555658720 Greenmove=3,4
+id=5000 time=1495555661318 quit button pressed
+id=5000 time=1495555695325 new game
+id=5000 time=1495555695325 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495555695465 initialized
+id=5000 time=1495555705504 Redmove=6,6
+id=5000 time=1495555713334 Greenmove=5,6
+id=5000 time=1495555717189 quit button pressed
+id=5000 time=1495555738042 new game
+id=5000 time=1495555738052 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495555738055 new game
+id=5000 time=1495555738057 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495555738188 initialized
+id=5000 time=1495555738227 initialized
+id=5000 time=1495555743256 quit button pressed
+id=5000 time=1495555748282 Redmove=6,6
+id=5000 time=1495555756061 Greenmove=5,6
+id=5000 time=1495555768391 Redmove=6,3
+id=5000 time=1495555776330 Greenmove=3,4
+id=5000 time=1495555788657 Redmove=4,6
+id=5000 time=1495555796615 Greenmove=3,4
+id=5000 time=1495555796618 Green makes illegal move
+id=5000 time=1495555800288 quit button pressed
+id=5000 time=1495555844661 new game
+id=5000 time=1495555844665 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495555844795 initialized
+id=5000 time=1495555854833 Redmove=6,6
+id=5000 time=1495555862597 Greenmove=5,6
+id=5000 time=1495555874924 Redmove=6,3
+id=5000 time=1495555882850 Greenmove=3,4
+id=5000 time=1495555895178 Redmove=4,6
+id=5000 time=1495555895423 quit button pressed
+id=5000 time=1495555920762 new game
+id=5000 time=1495555920766 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495555920894 initialized
+id=5000 time=1495555930932 Redmove=6,6
+id=5000 time=1495555938706 Greenmove=5,6
+id=5000 time=1495555951033 Redmove=6,3
+id=5000 time=1495555958912 Greenmove=3,4
+id=5000 time=1495555965047 quit button pressed
+id=5000 time=1495556019558 new game
+id=5000 time=1495556019562 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495556019694 initialized
+id=5000 time=1495556029731 Redmove=6,6
+id=5000 time=1495556042056 Greenmove=3,6
+id=5000 time=1495556054389 Redmove=5,3
+id=5000 time=1495556066238 quit button pressed
+id=5000 time=1495556079247 new game
+id=5000 time=1495556079250 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495556085114 initialized
+id=5000 time=1495556095297 Red exceeds time limit
+id=5000 time=1495556106326 quit button pressed
+id=5000 time=1495556107681 new game
+id=5000 time=1495556107684 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495556114093 initialized
+id=5000 time=1495556124114 Redmove=6,5
+id=5000 time=1495556139428 Green exceeds time limit
+id=5000 time=1495556166229 quit button pressed
+id=5000 time=1495556177681 new game
+id=5000 time=1495556177684 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495556184667 initialized
+id=5000 time=1495556194899 Red exceeds time limit
+id=5000 time=1495556203197 quit button pressed
+id=5000 time=1495556211165 new game
+id=5000 time=1495556211169 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495556217083 initialized
+id=5000 time=1495556227110 Redmove=6,5
+id=5000 time=1495556241477 Green exceeds time limit
+id=5000 time=1495556260453 quit button pressed
+id=5000 time=1495556269577 new game
+id=5000 time=1495556269580 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495556275613 initialized
+id=5000 time=1495556276644 quit button pressed
+id=5000 time=1495556288885 new game
+id=5000 time=1495556288889 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495556294704 initialized
+id=5000 time=1495556304426 Redmove=6,5
+id=5000 time=1495556321098 Green exceeds time limit
+id=5000 time=1495556330356 quit button pressed
+id=5000 time=1495556334555 new game
+id=5000 time=1495556334559 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495556341026 initialized
+id=5000 time=1495556350943 Redmove=6,6
+id=5000 time=1495556358381 Greenmove=3,4
+id=5000 time=1495556370409 Redmove=6,3
+id=5000 time=1495556377853 Greenmove=6,4
+id=5000 time=1495556386795 quit button pressed
+id=5000 time=1495556443459 new game
+id=5000 time=1495556443464 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495556449332 initialized
+id=5000 time=1495556459053 Redmove=6,6
+id=5000 time=1495556466490 Greenmove=3,4
+id=5000 time=1495556478519 Redmove=6,3
+id=5000 time=1495556485932 Greenmove=3,3
+id=5000 time=1495556485936 Green makes illegal move
+id=5000 time=1495556773843 new game
+id=5000 time=1495556773846 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495556779719 initialized
+id=5000 time=1495556789440 Redmove=6,5
+id=5000 time=1495556797008 Greenmove=3,6
+id=5000 time=1495556805420 quit button pressed
+id=5000 time=1495556831917 new game
+id=5000 time=1495556831921 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495556838489 initialized
+id=5000 time=1495556848208 Redmove=6,5
+id=5000 time=1495556855653 Greenmove=3,6
+id=5000 time=1495556867681 Redmove=4,3
+id=5000 time=1495556875095 Greenmove=3,5
+id=5000 time=1495556875100 Green makes illegal move
+id=5000 time=1495556896152 quit button pressed
+id=5000 time=1495556993112 new game
+id=5000 time=1495556993115 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495556998973 initialized
+id=5000 time=1495557008695 Redmove=6,5
+id=5000 time=1495557016179 Greenmove=3,6
+id=5000 time=1495557028209 Redmove=4,3
+id=5000 time=1495557035621 Greenmove=3,5
+id=5000 time=1495557035625 Green makes illegal move
+id=5000 time=1495557491264 new game
+id=5000 time=1495557491268 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495557499340 initialized
+id=5000 time=1495557509062 Redmove=6,5
+id=5000 time=1495557516563 Greenmove=3,6
+id=5000 time=1495557528627 Redmove=4,3
+id=5000 time=1495557536093 Greenmove=4,2
+id=5000 time=1495557548157 Redmove=3,3
+id=5000 time=1495557555671 Greenmove=2,3
+id=5000 time=1495557567723 Redmove=4,1
+id=5000 time=1495557575673 Greenmove=5,1
+id=5000 time=1495557587725 Redmove=6,1
+id=5000 time=1495557595225 Greenmove=6,6
+id=5000 time=1495557604931 Redmove=4,6
+id=5000 time=1495557610292 Greenmove=5,3
+id=5000 time=1495557619997 Redmove=6,4
+id=5000 time=1495557624931 quit button pressed
+id=5000 time=1495557690621 new game
+id=5000 time=1495557690624 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495557696883 initialized
+id=5000 time=1495557698026 quit button pressed
+id=5000 time=1495557706883 Redmove=6,5
+id=5000 time=1495557707017 new game
+id=5000 time=1495557707021 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495557714124 initialized
+id=5000 time=1495557714410 Greenmove=3,6
+id=5000 time=1495557723846 Redmove=6,5
+id=5000 time=1495557726446 Redmove=4,3
+id=5000 time=1495557733974 Greenmove=4,2
+id=5000 time=1495557735223 Greenmove=5,6
+id=5000 time=1495557746570 Redmove=3,4
+id=5000 time=1495557747477 Redmove=6,3
+id=5000 time=1495557754111 Greenmove=7,5
+id=5000 time=1495557764520 Green exceeds time limit
+id=5000 time=1495557766160 Redmove=6,6
+id=5000 time=1495557774284 Greenmove=6,7
+id=5000 time=1495557783329 quit button pressed
+id=5000 time=1495557786540 Redmove=8,5
+id=5000 time=1495557793961 quit button pressed
+id=5000 time=1495557822186 new game
+id=5000 time=1495557822189 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495557828630 initialized
+id=5000 time=1495557838353 Redmove=6,5
+id=5000 time=1495557849682 Greenmove=5,6
+id=5000 time=1495557866026 Red exceeds time limit
+id=5000 time=1495557889737 quit button pressed
+id=5000 time=1495557913661 new game
+id=5000 time=1495557913667 red=reversiplayers.AlphaBetaWithoutMemManager green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495557920441 initialized
+id=5000 time=1495557930256 Redmove=6,5
+id=5000 time=1495557946752 Green exceeds time limit
+id=5000 time=1495557990704 quit button pressed
+id=5000 time=1495558023876 new game
+id=5000 time=1495558023881 red=reversiplayers.Mole green=reversiplayers.AlphaBetaMemWithOptimaization
+id=5000 time=1495558031118 initialized
+id=5000 time=1495558036402 Redmove=6,3
+id=5000 time=1495558052763 Green exceeds time limit
