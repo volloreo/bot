@@ -1,12 +1,16 @@
 package reversiplayers;
 
-import reversi.*;
-import reversiplayers.IMemMan.NoFreeNodesException;
-import reversiplayers.ReversiUtils.GameStateNode;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.SynchronousQueue;
+
+import reversi.Coordinates;
+import reversi.GameBoard;
+import reversi.OutOfBoundsException;
+import reversi.ReversiPlayer;
+import reversi.Utils;
+import reversiplayers.IMemMan.NoFreeNodesException;
 
 public class AlphaBetaMemWithOptimaization implements ReversiPlayer {
 	private int color = 0;
@@ -16,6 +20,7 @@ public class AlphaBetaMemWithOptimaization implements ReversiPlayer {
 	private long tbuffer = 1000;
 	private long t0 = 0;
 	private long tR = 0;
+	private int startDepth = 3;
 	private int maxDepth = 10;
 	
 	private static List<Coordinates> allMoves = new ArrayList<>(Arrays.asList(
@@ -133,7 +138,7 @@ public class AlphaBetaMemWithOptimaization implements ReversiPlayer {
 		memManager.setHeadNode(headNodeId);
 		
 		Coordinates curBestcoor = null;
-		int i = 1;
+		int i = startDepth;
 		try {
 			while (i < maxDepth) {
 				i++;
@@ -299,8 +304,10 @@ public class AlphaBetaMemWithOptimaization implements ReversiPlayer {
 					System.err.println("No Free Node Exception. Stopping calculation");
 					return pts(gb, color, other);
 				}
+				//long linkNodeTime = System.currentTimeMillis();
 				
 				memManager.linkNodes(GameBoardImplAdress, gbAdress);
+				//System.out.println("Link Nodes took:" + (System.currentTimeMillis() - linkNodeTime));
 
 				int cur = minValue(gbAdress, nextDepth + 1, maxDepth, a, b);
 				// min = Integer.min(b, maxValue(nextgb, nextDepth+1, maxDepth,
@@ -365,7 +372,11 @@ public class AlphaBetaMemWithOptimaization implements ReversiPlayer {
 				
 				nextgb.checkMove(other, move);
 				nextgb.makeMove(other, move);
+				
+				//long linkNodeTime = System.currentTimeMillis();
+				
 				memManager.linkNodes(gameBoardImplAddress, nextGbAddress);
+				//System.out.println("Link Nodes took:" + (System.currentTimeMillis() - linkNodeTime));
 				int cur = maxValue(nextGbAddress, nextDepth + 1, maxDepth, a, b);
 				// min = Integer.min(b, maxValue(nextgb, nextDepth+1, maxDepth,
 				// a,
@@ -390,6 +401,10 @@ public class AlphaBetaMemWithOptimaization implements ReversiPlayer {
 
 
 	private void CheckTimeOut() throws OutOfTimeException {
+		StackTraceElement[] stacktrace = Thread.currentThread().getStackTrace();
+		StackTraceElement e = stacktrace[2];//maybe this number needs to be corrected
+		String methodName = e.getMethodName();
+		System.out.println(methodName + "--  Checking time: " + (System.currentTimeMillis() - t0));
 		if (maxTime - (System.currentTimeMillis() - t0) <= 0)
 			throw new OutOfTimeException();
 	}
@@ -402,6 +417,7 @@ public class AlphaBetaMemWithOptimaization implements ReversiPlayer {
 	
 	
 	public static class GameBoardImpl implements GameBoard {
+		
 		private List<Coordinates> possMoves = null;
 		private final GameBoard gb;
 		private Coordinates lastMove;
