@@ -84,8 +84,8 @@ public class StuckInEloHell implements ReversiPlayer {
 	private Coordinates bestMove(BitGameBoard gb, int maxDepth) throws OutOfTimeException {
 		CheckTimeOut();
 
-		int initialAlpha = -300;
-		int initialBeta = 300;
+		int initialAlpha = Integer.MIN_VALUE;
+		int initialBeta = Integer.MAX_VALUE;
 		
 		
 
@@ -129,7 +129,8 @@ public class StuckInEloHell implements ReversiPlayer {
 				repeat = true;
 				System.out.println("To sharp knives. lets grab another pair of scissores (bestIter = initialBeta)");
 			}
-		} while (repeat);
+			// TODO Implement
+		} while (repeat && false);
 		System.out.println("Possible Moves: " + moves + " took " + bestIter);
 
 		return bestMove;
