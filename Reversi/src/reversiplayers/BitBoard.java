@@ -3,7 +3,10 @@ package reversiplayers;
 
 
 /**
- * @author      Jonas Raedle <jonas@jraedle.de>
+ * This code wos copied from a Github Project as a BitBoard!! 
+ * We do not own the copyright, some changes were being made, to use it in this reversi project
+ * 
+ * @author    Jonas Raedle <jonas@jraedle.de>
  */
 
 import java.util.ArrayList;
