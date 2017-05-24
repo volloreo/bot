@@ -1,8 +1,9 @@
 /**
- * @version v0.3
+ * @version v0.4
  * v0.1 base
  * v0.2 addition curDepth to calcPoints
  * v0.3 with stability
+ * v0.4 tweaks
  */
 
 package reversiplayers;
@@ -38,7 +39,7 @@ public class PointCalc{
 	
 	//Constructor
 	public PointCalc(){
-		this(0, 1, 10, 1);
+		this(0, 1, 1000, 1);
 	}
 	
 	public PointCalc(long parityWeight, long mobilityWeight, long cornerWeight, long stabilityWeight){
@@ -78,15 +79,21 @@ public class PointCalc{
 			res += depr_par(gb, maxPlayer);*/
 		//Add coin parity modifier
 		//res += parity(gb, maxPlayer, minPlayer) * parity_fac;
+		
 		//Evaluate board for next modifiers (corners and parity returned, prep for mobility)
-		res += eval_board(gb, maxPlayer, minPlayer) * stab_fac;
+		long eval = eval_board(gb, maxPlayer, minPlayer) * stab_fac;
+		res += eval; /*eval_board(gb, maxPlayer, minPlayer) * stab_fac;*/
 		//System.out.println("WeightedParity+Stability:"+res);
+		
 		//Add mobility modifier
-		res += mobility() * mobility_fac;
-		//System.out.println("+Mobility:               "+res);
+		long mob = mobility() * mobility_fac;
+		res += mob; /*mobility() * mobility_fac;*/
+		//System.out.println("+Mobility:               "+mob);
+		
 		//Add corners captured modifier
-		res += corners() * corner_fac;
-		//System.out.println("+Corners(again):         "+res);
+		long cor = corners() * corner_fac;
+		res += cor; /*corners() * corner_fac;*/
+		//System.out.println("+Corners(again):         "+cor);
 		//System.out.println(" ");
 		//Add stability modifier
 		return res;
@@ -182,11 +189,12 @@ public class PointCalc{
 				//WEIGHTED PARITY
 				if(gb.getOccupation(c) == us){
 					//Spread stability around itself
-					spread_stab(cur_m, row, col);
+					spread_stab(cur_m, row-1, col-1);
 					//Add weighted parity of position (w corners)
 					pts += cur_m[row-1][col-1];
 				}
 				if(gb.getOccupation(c) == them){
+					spread_instab(cur_m, row-1, col-1);
 					pts -= cur_m[row-1][col-1];
 				}
 				//MOBILITY: Count up how many possible moves we/they have
@@ -220,6 +228,19 @@ public class PointCalc{
 		}
 	}
 	
+	private void spread_instab(int[][] m, int row, int col){
+		for(int i = row-1; i < row+1; i++){
+			for(int j = col-1; j < col+1; j++){
+				if(!(i == row && j == col)){//if not itself
+					if(i>0 && i<8 && j>0 && j<8){//if valid coord
+						if(!(m[i][j] < 30))	//if pos not at min stab
+							m[i][j] -= 10;	//add 10 stab
+					}
+				}
+			}
+		}
+	}
+	
 	private int depr_par(GameBoard gb, int us){
 		return gb.countStones(us);
 	}
@@ -241,18 +262,15 @@ public class PointCalc{
 	}
 	//Should be called after eval_board
 	private int corners(){
-		if(our_corners+their_corners != 0)
+		//if(our_corners > 0 || their_corners > 0)
+		//	System.out.println("CORNER FOUND!");
+		//if(our_corners+their_corners != 0)
 			return per*((our_corners - their_corners)/4);
-		else
-			return 0;
+		//else
+		//	return 0;
 	}
 	//m has to be 8x8
 	private int[][] copy_m(int[][] m){
-		int[][] res = new int[8][8];
-		for(int i = 0; i < 8; i++){
-			for(int j = 0; j < 8; j++)
-				res[i][j] = m[i][j];
-		}
-		return res;
+		return m.clone();
 	}
 }
