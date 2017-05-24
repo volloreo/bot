@@ -4,9 +4,12 @@
  * v0.2 addition curDepth to calcPoints
  */
 
-package uR;
+package reversiplayers;
 
-import reversi.*;
+import reversi.Coordinates;
+import reversi.GameBoard;
+import reversi.OutOfBoundsException;
+import reversi.Utils;
 
 public class PointCalc{
 	//Factors for Modifiers
@@ -78,6 +81,10 @@ public class PointCalc{
 		return res;
 	}
 	
+	
+	public int calcPoints(GameBoard gb, int player) {
+		return calcPoints(gb, player, 0);
+	}
 	private void eval_board(GameBoard gb, int us, int them){
 		//Reset counters
 		our_corners = 0;
