@@ -1,9 +1,10 @@
 /**
- * @version v0.1
+ * @version v0.2
  * v0.1 base
+ * v0.2 addition curDepth to calcPoints
  */
 
-package reversiplayers;
+package uR;
 
 import reversi.*;
 
@@ -15,21 +16,36 @@ public class PointCalc{
 	private long corner_fac = 10;
 	private long stab_fac = 0;
 	
+	private int[][] matrix;
 	private int our_corners;
 	private int their_corners;
 	private int our_moves;
 	private int their_moves;
 	
+	private int most_kids=0;
+	
 	private int per = 1000;
 	
 	//Constructor
-	public PointCalc(){}
+	public PointCalc(){
+		this(1, 1, 10, 0);
+	}
 	
 	public PointCalc(long parityWeight, long mobilityWeight, long cornerWeight, long stabilityWeight){
 		parity_fac = parityWeight;
 		mobility_fac = mobilityWeight;
 		corner_fac = cornerWeight;
 		stab_fac = stabilityWeight;
+		
+		matrix = new int[][]{
+							{25, -9, 05, 01, 01, 05, -9, 25},
+							{-9, -9, 05, 01, 01, 05, -9, -9},
+							{05, 05, 05, 01, 01, 05, 05, 05},
+							{01, 01, 01, 01, 01, 01, 01, 01},
+							{01, 01, 01, 01, 01, 01, 01, 01},
+							{05, 05, 05, 01, 01, 05, 05, 05},
+							{-9, -9, 05, 01, 01, 05, -9, -9},
+							{25, -9, 05, 01, 01, 05, -9, 25}};
 	}
 	//Set parameter to Long.MIN_VALUE to keep same
 	public void changeWeight(long parityWeight, long mobilityWeight, long cornerWeight, long stabilityWeight){
@@ -44,7 +60,7 @@ public class PointCalc{
 		
 	}
 	
-	public int calcPoints(GameBoard gb, int maxPlayer){
+	public int calcPoints(GameBoard gb, int maxPlayer, int curDepth){
 		int minPlayer = Utils.other(maxPlayer);
 		int res = 0;
 		//Add deprecated parity
@@ -118,6 +134,9 @@ public class PointCalc{
 	}
 	//Should be called after eval_board
 	private int mobility(){
+		/*if(our_moves > most_kids)
+			most_kids = our_moves;
+		System.out.println("Most moves:" + most_kids);*/
 		if(our_moves + their_moves != 0)
 			return per *(our_moves - their_moves)/(our_moves+their_moves);
 		else
@@ -126,7 +145,7 @@ public class PointCalc{
 	//Should be called after eval_board
 	private int corners(){
 		if(our_corners+their_corners != 0)
-			return per*(our_corners - their_corners)/4;
+			return per*((our_corners - their_corners)/4);
 		else
 			return 0;
 	}
